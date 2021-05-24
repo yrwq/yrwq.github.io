@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang=en-us><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Why you should use Vim? - yrwq</title>
+    <meta name="description" content="An all-time work in progress Vim guide.
+What is Vim?  According to vim.org
+ Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &ldquo;vi&rdquo; with most UNIX systems and with Apple OS X.
+Vim is rock stable and is continuously being developed to become even better. Among its features are:
+ persistent, multi-level undo tree extensive plugin system support for hundreds of programming languages and file formats powerful search and replace integrates with many tools  Where you can get help?">
+    <link rel="canonical" href="https://yrwq.github.io/posts/vim/">
+    <link rel="icon" href="https://yrwq.github.io/img/prof.jpg">
+    <meta property="og:title" content="Why you should use Vim?">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yrwq.github.io/posts/vim/">
+    <meta property="og:description" content="An all-time work in progress Vim guide.
+What is Vim?  According to vim.org
+ Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &ldquo;vi&rdquo; with most UNIX systems and with Apple OS X.
+Vim is rock stable and is continuously being developed to become even better. Among its features are:
+ persistent, multi-level undo tree extensive plugin system support for hundreds of programming languages and file formats powerful search and replace integrates with many tools  Where you can get help?">
+    <meta property="og:site_name" content="yrwq">
+    <link rel="stylesheet" href="https://yrwq.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
+    <meta name="generator" content="Hugo 0.83.1" />
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body><header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="https://yrwq.github.io/">
+    <span itemprop="name">yrwq</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="https://yrwq.github.io/posts/">
+    <span itemprop="name">posts</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item active hidden" aria-current="page"
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="https://yrwq.github.io/posts/vim/">
+    <span itemprop="name">vim</span>
+  </a>
+  <meta itemprop="position" content="1" />
+</li></ol>
+    </nav>
+    <h1 class="site-title hidden">
+		<a href="https://yrwq.github.io">yrwq</a>
+    </h1>
+</header>
+<main id="content">
+<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">        
+        <h2 class="post-title" itemprop="name headline">Why you should use Vim?</h2>
+        <span class="post-meta">
+            <time class="date-published" datetime="2021-05-24T00:36:43&#43;07:00" itemprop="datePublished">
+                Mon, 24 May 2021
+            </time>
+            
+        </span>
+    </header>
+    <div class="post-content" itemprop="articleBody">
+        <p>An all-time work in progress Vim guide.</p>
+<h1 id="what-is-vim">What is Vim?</h1>
+<blockquote>
+<p>According to 
+<a href="https://vim.org" target="_blank" rel="nofollow noreferrer noopener">vim.org</a></p>
+</blockquote>
+<p>Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &ldquo;vi&rdquo; with most UNIX systems and with Apple OS X.</p>
+<p>Vim is rock stable and is continuously being developed to become even better. Among its features are:</p>
+<ul>
+<li>persistent, multi-level undo tree</li>
+<li>extensive plugin system</li>
+<li>support for hundreds of programming languages and file formats</li>
+<li>powerful search and replace</li>
+<li>integrates with many tools</li>
+</ul>
+<h1 id="where-you-can-get-help">Where you can get help?</h1>
+<p>Open terminal. Type <code>vimtutor</code>. Press <code>&lt;ENTER&gt;</code></p>
+<p>Open vim. Type <code>:help</code>. Press <code>&lt;ENTER&gt;</code></p>
+<p>Read along.</p>
+<h1 id="mode-to-mode-to-mode-to-">Mode-to-mode-to-mode-to &hellip;</h1>
+<p>What vim is excellent at? Navigate. Make changes. Repeat.</p>
+<p>Vim achieves all of its features because it support different modes.</p>
+<h2 id="modes">Modes</h2>
+<ul>
+<li>
+<p><strong><code>NORMAL</code></strong></p>
+<p>By default, Vim starts in <strong><code>normal</code></strong> mode.</p>
+<p>Pressing <code>&lt;ESC&gt;</code> and why the fuck i can&rsquo;t append to my text file??</p>
+<p>In <strong><code>normal</code></strong> or <strong><code>command</code></strong> mode you can swiftly navigate around your file, manipulate text and launch commands.</p>
+</li>
+</ul>
+<h3 id="wtf-you-mean-by-launching-a-command">Wtf you mean by launching a command?</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Command</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:wq</td>
+<td style="text-align:center">save and exit</td>
+</tr>
+<tr>
+<td style="text-align:center">:q!</td>
+<td style="text-align:center">abort(and exit)!!</td>
+</tr>
+<tr>
+<td style="text-align:center">:s/old/new/g</td>
+<td style="text-align:center">change &lsquo;new&rsquo; to &lsquo;old&rsquo; where g is globally</td>
+</tr>
+<tr>
+<td style="text-align:center">:!ls</td>
+<td style="text-align:center">run a shell command</td>
+</tr>
+<tr>
+<td style="text-align:center">:read ls</td>
+<td style="text-align:center">read a shell commands output</td>
+</tr>
+<tr>
+<td style="text-align:center">:Explore</td>
+<td style="text-align:center">open vim&rsquo;s builtin file manager</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-black-hole-of-the-key-bindings">The black-hole of the key bindings.</h3>
+<p>In <strong><code>NORMAL</code></strong> mode, literally every key on your keyboard does something:</p>
+<h4 id="text-entry">Text Entry</h4>
+<p><code>a</code> appends text following the current cursor position</p>
+<p><code>A</code> appends text to the end of the current line</p>
+<p><code>i</code> appends text before the current cursor position</p>
+<p><code>I</code> appends text to the beginning of the current line</p>
+<p><code>o</code> open a new line after the current line and append text</p>
+<p><code>O</code> open a new line before the current line and append text</p>
+<h4 id="cursor-movement">Cursor movement</h4>
+<hr>
+<p>written in emacs.</p>
+
+    </div>
+</article>
+<div class="pagination">
+    
+    
+</div>
+
+
+        </main>
+    </body>
+</html>

@@ -1,13 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>yrwq</title>
-    <link>/</link>
+    <link>https://yrwq.github.io/</link>
     <description>Recent content on yrwq</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 24 May 2021 00:36:43 +0200</lastBuildDate><atom:link href="https://yrwq.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rice</title>
+      <link>https://yrwq.github.io/rice/</link>
+      <pubDate>Mon, 24 May 2021 00:36:43 +0200</pubDate>
+      
+      <guid>https://yrwq.github.io/rice/</guid>
+      <description>minimal </description>
+    </item>
     
-        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>software</title>
+      <link>https://yrwq.github.io/software/</link>
+      <pubDate>Mon, 24 May 2021 00:36:43 +0200</pubDate>
+      
+      <guid>https://yrwq.github.io/software/</guid>
+      <description>Here are the programs i use daily. I only list programs i consider tried and have used for a while.
+Basic  Operating system  I use Arch Linux, because it requires you to build up your own &amp;lsquo;distribution&amp;rsquo; from the ground up.
+ Terminal  I use st(simple terminal) by suckless, which is one of the most minimal, yet easily customizable terminal emulator out there.
+ Window Manager   herbstluftwm is a manual tiling window manager for the X window system.</description>
+    </item>
     
+    <item>
+      <title>Why you should use Vim?</title>
+      <link>https://yrwq.github.io/posts/vim/</link>
+      <pubDate>Mon, 24 May 2021 00:36:43 +0200</pubDate>
+      
+      <guid>https://yrwq.github.io/posts/vim/</guid>
+      <description>An all-time work in progress Vim guide.
+What is Vim?  According to vim.org
+ Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &amp;ldquo;vi&amp;rdquo; with most UNIX systems and with Apple OS X.
+Vim is rock stable and is continuously being developed to become even better. Among its features are:
+ persistent, multi-level undo tree extensive plugin system support for hundreds of programming languages and file formats powerful search and replace integrates with many tools  Where you can get help?</description>
+    </item>
     
   </channel>
-</rss> 
+</rss>
