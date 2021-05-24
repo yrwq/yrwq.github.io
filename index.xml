@@ -35,7 +35,7 @@ https://yrwq.github.io/index.xml </description>
       <description>Here are the programs i use daily. I only list programs i consider tried and have used for a while.
 Basic  Operating system  I use Arch Linux, because it requires you to build up your own &amp;lsquo;distribution&amp;rsquo; from the ground up.
  Terminal  I use st(simple terminal) by suckless, which is one of the most minimal, yet easily customizable terminal emulator out there.
- Window Manager   herbstluftwm is a manual tiling window manager for the X window system.</description>
+ Window Manager  herbstluftwm is a manual tiling window manager for the X window system.</description>
     </item>
     
     <item>
