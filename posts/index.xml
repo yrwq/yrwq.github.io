@@ -17,18 +17,5 @@
 https://yrwq.github.io/index.xml </description>
     </item>
     
-    <item>
-      <title>Why you should use Vim?</title>
-      <link>https://yrwq.github.io/posts/vim/</link>
-      <pubDate>Mon, 24 May 2021 00:36:43 +0200</pubDate>
-      
-      <guid>https://yrwq.github.io/posts/vim/</guid>
-      <description>An all-time work in progress Vim guide.
-What is Vim?  According to vim.org
- Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &amp;ldquo;vi&amp;rdquo; with most UNIX systems and with Apple OS X.
-Vim is rock stable and is continuously being developed to become even better. Among its features are:
- persistent, multi-level undo tree extensive plugin system support for hundreds of programming languages and file formats powerful search and replace integrates with many tools  Where you can get help?</description>
-    </item>
-    
   </channel>
 </rss>

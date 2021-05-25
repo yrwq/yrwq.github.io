@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang=en-us><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Configuring Vim - yrwq</title>
+    <meta name="description" content="Some months ago i started using neovim, because of it&rsquo;s strong defaults, and modern terminal features.
+If you already installed Neovim Nightly, please skip to getting started
+What&rsquo;s the difference? Neovim is a project that seeks to aggressively refactor Vim in order to:
+ simplify maintance modern user interface improved extensibility more powerful plugins better support for embedding built-in lua engine  Installation No, you won&rsquo;t build it from source.">
+    <link rel="canonical" href="https://yrwq.github.io/vim/config/">
+    <link rel="icon" href="/img/prof.jpg">
+    <meta property="og:title" content="Configuring Vim">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yrwq.github.io/vim/config/">
+    <meta property="og:description" content="Some months ago i started using neovim, because of it&rsquo;s strong defaults, and modern terminal features.
+If you already installed Neovim Nightly, please skip to getting started
+What&rsquo;s the difference? Neovim is a project that seeks to aggressively refactor Vim in order to:
+ simplify maintance modern user interface improved extensibility more powerful plugins better support for embedding built-in lua engine  Installation No, you won&rsquo;t build it from source.">
+    <meta property="og:site_name" content="yrwq">
+    <link rel="stylesheet" href="https://yrwq.github.io/css/main.min.9f867a74224f68ac2a40e40aa60a89776eeb5317de3779081a0796673ffcf78c.css" integrity="sha256-n4Z6dCJPaKwqQOQKpgqJd27rUxfeN3kIGgeWZz/894w=">
+    <meta name="generator" content="Hugo 0.83.1" />
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body><header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="https://yrwq.github.io/">
+    <span itemprop="name">yrwq</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="https://yrwq.github.io/vim/">
+    <span itemprop="name">vim</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item active hidden" aria-current="page"
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="https://yrwq.github.io/vim/config/">
+    <span itemprop="name">config</span>
+  </a>
+  <meta itemprop="position" content="1" />
+</li></ol>
+    </nav>
+    <h1 class="site-title hidden">
+		<a href="https://yrwq.github.io">yrwq</a>
+    </h1>
+</header>
+<main id="content">
+<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">        
+        <h2 class="post-title" itemprop="name headline">Configuring Vim</h2>
+        <span class="post-meta">
+            <time class="date-published" datetime="2021-05-25T00:59:03&#43;07:00" itemprop="datePublished">
+                Tue, 25 May 2021
+            </time>
+            
+        </span>
+    </header>
+    <div class="post-content" itemprop="articleBody">
+        <p>Some months ago i started using 
+<a href="https://github.com/neovim/neovim" target="_blank" rel="nofollow noreferrer noopener">neovim</a>, because of it&rsquo;s strong defaults, and modern terminal features.</p>
+<p>If you already installed <strong><code>Neovim Nightly</code></strong>, please skip to 
+<a href="#getting-started">getting started</a></p>
+<h1 id="whats-the-difference">What&rsquo;s the difference?</h1>
+<p>Neovim is a project that seeks to aggressively refactor Vim in order to:</p>
+<ul>
+<li>simplify maintance</li>
+<li>modern user interface</li>
+<li>improved extensibility</li>
+<li>more powerful plugins</li>
+<li>better support for embedding</li>
+<li>built-in lua engine</li>
+</ul>
+<h1 id="installation">Installation</h1>
+<p>No, you won&rsquo;t build it from source.</p>
+<ul>
+<li>install some requirements</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Sy curl fuse3
+</code></pre></div><ul>
+<li>download the nightly appimage</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -LSs https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -o nvim
+</code></pre></div><ul>
+<li>make the downloaded appimage executable</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod +x nvim
+</code></pre></div><ul>
+<li>move the executable somewhere you can execute it</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mv nvim /usr/bin/
+</code></pre></div><p><code>nvim</code>. done.</p>
+<h1 id="getting-started">Getting started</h1>
+<p>One of the killer features of neovim is it&rsquo;s built-in <code>Lua</code> engine. This allows us to configure neovim in plain <code>Lua</code>.</p>
+<p>The above steps assumes you already installed the latest nightly build of neovim.</p>
+<p>If you are not familiar with <code>Lua</code>, i would recommend the 
+<a href="https://www.lua.org/manual/5.3/manual.html" target="_blank" rel="nofollow noreferrer noopener">official Lua manual</a>.</p>
+<hr>
+<p><strong>Quick Tip</strong>: alias v=&ldquo;nvim&rdquo;</p>
+<hr>
+<h2 id="where-to-begin">Where to begin</h2>
+<ul>
+<li><code>init.lua</code></li>
+</ul>
+<p>Neovim supports loading an <code>init.lua</code> file for configuration instead of the usual <code>init.vim</code>.</p>
+<p>Create your first <code>init.lua</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir -p ~/.config/nvim/lua
+touch ~/.config/nvim/init.lua
+</code></pre></div><p>Now your folder structure shoud look like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">📂 ~/.config/nvim
+├── 📂 lua
+└── 🌑 init.lua
+</code></pre></div><ul>
+<li><code>other lua files</code></li>
+</ul>
+<p>Lua files are tipically found inside <code>~/.config/nvim/lua</code>, you can <code>require()</code> these files as modules.</p>
+<p>For example, if you have a folder structure like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">📂 ~/.config/nvim
+├── 📂 lua
+│  ├── 🌑 settings.lua
+│  └── 📂 themes
+│     ├── 🌑 dark.lua
+└── 🌑 init.lua
+</code></pre></div><p>then in your <code>init.lua</code>, you can do the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#75715e">-- the following lua code will load lua/settings.lua</span>
+require(<span style="color:#e6db74">&#34;settings&#34;</span>)
+<span style="color:#75715e">-- similarly loading from a subdirectory:</span>
+require(<span style="color:#e6db74">&#34;themes.dark&#34;</span>)
+</code></pre></div><p>For more information: <code>:help lua-require</code></p>
+<h2 id="using-lua-from-vimscript">Using Lua from Vimscript</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; multi-line scripts are possible using the syntax below</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">lua</span> &lt;&lt; <span style="color:#a6e22e">EOF</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>-- <span style="color:#a6e22e">lua</span> <span style="color:#a6e22e">code</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>-- ...<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;settings&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;themes.dark&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>-- ...<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">EOF</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><hr>
+<p><strong>Quick Tip</strong>: <code>:luafile %</code> evaluates current Lua file in vim</p>
+<hr>
+<h2 id="using-vimscript-from-lua">Using Vimscript from Lua</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#66d9ef">local</span> cmd <span style="color:#f92672">=</span> vim.api.nvim_exec
+
+<span style="color:#75715e">-- change colorscheme to dark</span>
+cmd(<span style="color:#e6db74">&#34;colorscheme dark&#34;</span>)
+
+cmd(<span style="color:#e6db74">[[
+</span><span style="color:#e6db74">&#34; enable syntax highlighting and line numbers
+</span><span style="color:#e6db74">set syntax
+</span><span style="color:#e6db74">set number
+</span><span style="color:#e6db74">]]</span>)
+</code></pre></div>
+    </div>
+</article>
+<div class="pagination">
+    
+    <div class="prev"> <a href="https://yrwq.github.io/vim/basics/">Previous Post</a> </div>
+    
+    
+</div>
+
+
+        </main>
+    </body>
+</html>

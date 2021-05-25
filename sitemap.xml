@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yrwq.github.io/vim/config/</loc>
+    <lastmod>2021-05-25T00:59:03+02:00</lastmod>
+  </url><url>
+    <loc>https://yrwq.github.io/vim/</loc>
+    <lastmod>2021-05-25T00:59:03+02:00</lastmod>
+  </url><url>
+    <loc>https://yrwq.github.io/</loc>
+    <lastmod>2021-05-25T00:59:03+02:00</lastmod>
+  </url><url>
     <loc>https://yrwq.github.io/posts/</loc>
     <lastmod>2021-05-24T21:45:12+02:00</lastmod>
   </url><url>
     <loc>https://yrwq.github.io/posts/rss/</loc>
-    <lastmod>2021-05-24T21:45:12+02:00</lastmod>
-  </url><url>
-    <loc>https://yrwq.github.io/</loc>
     <lastmod>2021-05-24T21:45:12+02:00</lastmod>
   </url><url>
     <loc>https://yrwq.github.io/rice/</loc>
@@ -17,8 +23,11 @@
     <loc>https://yrwq.github.io/software/</loc>
     <lastmod>2021-05-24T00:36:43+02:00</lastmod>
   </url><url>
-    <loc>https://yrwq.github.io/posts/vim/</loc>
+    <loc>https://yrwq.github.io/vim/basics/</loc>
     <lastmod>2021-05-24T00:36:43+02:00</lastmod>
+  </url><url>
+    <loc>https://yrwq.github.io/contact/</loc>
+    <lastmod>2021-04-25T08:09:39+02:00</lastmod>
   </url><url>
     <loc>https://yrwq.github.io/categories/</loc>
   </url><url>

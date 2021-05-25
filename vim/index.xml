@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vims on yrwq</title>
+    <link>https://yrwq.github.io/vim/</link>
+    <description>Recent content in Vims on yrwq</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 May 2021 00:59:03 +0200</lastBuildDate><atom:link href="https://yrwq.github.io/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring Vim</title>
+      <link>https://yrwq.github.io/vim/config/</link>
+      <pubDate>Tue, 25 May 2021 00:59:03 +0200</pubDate>
+      
+      <guid>https://yrwq.github.io/vim/config/</guid>
+      <description>Some months ago i started using neovim, because of it&amp;rsquo;s strong defaults, and modern terminal features.
+If you already installed Neovim Nightly, please skip to getting started
+What&amp;rsquo;s the difference? Neovim is a project that seeks to aggressively refactor Vim in order to:
+ simplify maintance modern user interface improved extensibility more powerful plugins better support for embedding built-in lua engine  Installation No, you won&amp;rsquo;t build it from source.</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://yrwq.github.io/vim/basics/</link>
+      <pubDate>Mon, 24 May 2021 00:36:43 +0200</pubDate>
+      
+      <guid>https://yrwq.github.io/vim/basics/</guid>
+      <description>According to vim.org
+ Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &amp;ldquo;vi&amp;rdquo; with most UNIX systems and with Apple OS X.
+Vim is rock stable and is continuously being developed to become even better. Among its features are:
+ persistent, multi-level undo tree extensive plugin system support for hundreds of programming languages and file formats powerful search and replace integrates with many tools  Where can I get help?</description>
+    </item>
+    
+  </channel>
+</rss>
