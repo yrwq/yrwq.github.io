@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>yrwq</title>
-    <link>https://yrwq.github.io/</link>
-    <description>Recent content on yrwq</description>
+    <title>terminal on yrwq</title>
+    <link>https://yrwq.github.io/tags/terminal/</link>
+    <description>Recent content in terminal on yrwq</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2020, Inhof Dávid; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 25 May 2021 00:59:03 +0200</lastBuildDate><atom:link href="https://yrwq.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 00:59:03 +0200</lastBuildDate><atom:link href="https://yrwq.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring Vim</title>
       <link>https://yrwq.github.io/vim/config/</link>
@@ -31,27 +31,6 @@ https://yrwq.github.io/index.xml </description>
     </item>
     
     <item>
-      <title>rice</title>
-      <link>https://yrwq.github.io/rice/</link>
-      <pubDate>Mon, 24 May 2021 00:36:43 +0200</pubDate>
-      
-      <guid>https://yrwq.github.io/rice/</guid>
-      <description>coffee bran minimal nature mountains cold xdd notepad polished xmonad.errors </description>
-    </item>
-    
-    <item>
-      <title>software</title>
-      <link>https://yrwq.github.io/software/</link>
-      <pubDate>Mon, 24 May 2021 00:36:43 +0200</pubDate>
-      
-      <guid>https://yrwq.github.io/software/</guid>
-      <description>Here are the programs i use daily. I only list programs i consider tried and have used for a while.
-Basic  Operating system  I use Arch Linux, because it requires you to build up your own &amp;lsquo;distribution&amp;rsquo; from the ground up.
- Terminal  I use st(simple terminal) by suckless, which is one of the most minimal, yet easily customizable terminal emulator out there.
- Window Manager   herbstluftwm is a manual tiling window manager for the X window system.</description>
-    </item>
-    
-    <item>
       <title>Vim</title>
       <link>https://yrwq.github.io/vim/basics/</link>
       <pubDate>Mon, 24 May 2021 00:36:43 +0200</pubDate>
@@ -61,34 +40,6 @@ Basic  Operating system  I use Arch Linux, because it requires you to build up y
  Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &amp;ldquo;vi&amp;rdquo; with most UNIX systems and with Apple OS X.
 Vim is rock stable and is continuously being developed to become even better. Among its features are:
  persistent, multi-level undo tree extensive plugin system support for hundreds of programming languages and file formats powerful search and replace integrates with many tools  Where can I get help?</description>
-    </item>
-    
-    <item>
-      <title>contact</title>
-      <link>https://yrwq.github.io/contact/</link>
-      <pubDate>Sun, 25 Apr 2021 08:09:39 +0200</pubDate>
-      
-      <guid>https://yrwq.github.io/contact/</guid>
-      <description>hmu on    matrix
-@yrwq:matrix.org
-   discord
-yrwq#5792
-  donate    monero
-4AucTsZaS5wF66mRoWfx4WWHFhatoW1e51egQbpvWTkLiQC7QwoZkd3GUJNwDbdnx3WKE2ZBhTb6sgNMmL2XbQ6QUQme91p
-  collaborate    github
-@yrwq
-   wire
-@yrwq
-  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://yrwq.github.io/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yrwq.github.io/archives/</guid>
-      <description></description>
     </item>
     
   </channel>

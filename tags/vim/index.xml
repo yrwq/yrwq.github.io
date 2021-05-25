@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vim related stuff on yrwq</title>
-    <link>https://yrwq.github.io/vim/</link>
-    <description>Recent content in vim related stuff on yrwq</description>
+    <title>vim on yrwq</title>
+    <link>https://yrwq.github.io/tags/vim/</link>
+    <description>Recent content in vim on yrwq</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2020, Inhof Dávid; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 25 May 2021 00:59:03 +0200</lastBuildDate><atom:link href="https://yrwq.github.io/vim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 00:59:03 +0200</lastBuildDate><atom:link href="https://yrwq.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring Vim</title>
       <link>https://yrwq.github.io/vim/config/</link>
