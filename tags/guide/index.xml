@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2020, Inhof Dávid; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 25 May 2021 00:59:03 +0200</lastBuildDate><atom:link href="https://yrwq.github.io/tags/guide/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yrwq.github.io/tags/guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring Vim</title>
       <link>https://yrwq.github.io/vim/config/</link>
-      <pubDate>Tue, 25 May 2021 00:59:03 +0200</pubDate>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://yrwq.github.io/vim/config/</guid>
       <description>Some months ago i started using neovim, because of it&amp;rsquo;s strong defaults, and modern terminal features.
@@ -23,7 +23,7 @@ What&amp;rsquo;s the difference? Neovim is a project that seeks to aggressively 
     <item>
       <title>Vim</title>
       <link>https://yrwq.github.io/vim/basics/</link>
-      <pubDate>Mon, 24 May 2021 00:36:43 +0200</pubDate>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://yrwq.github.io/vim/basics/</guid>
       <description>According to vim.org
