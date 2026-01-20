@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[yrwq]]></title>
+        <description><![CDATA[Personal blog and website]]></description>
+        <link>https://yrwq.dev</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Tue, 20 Jan 2026 18:58:24 GMT</lastBuildDate>
+        <atom:link href="https://yrwq.dev/rss.xml" rel="self" type="application/rss+xml"/>
+        <copyright><![CDATA[© 2026 yrwq]]></copyright>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[debugging x86_64 elf on mac silicon]]></title>
+            <description><![CDATA[how to debug x86_64 elf(linux) binaries on mac silicon(m series)]]></description>
+            <link>https://yrwq.dev/blog/2026-01-gdb-x86_64-silicon</link>
+            <guid isPermaLink="false">https://yrwq.dev/blog/2026-01-gdb-x86_64-silicon</guid>
+            <category><![CDATA[gdb]]></category>
+            <category><![CDATA[debug]]></category>
+            <category><![CDATA[mac]]></category>
+            <pubDate>Sat, 17 Jan 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[setup gdb on mac silicon]]></title>
+            <description><![CDATA[how to setup gdb on mac silicon(m series)]]></description>
+            <link>https://yrwq.dev/blog/2026-01-setup-gdb-silicon</link>
+            <guid isPermaLink="false">https://yrwq.dev/blog/2026-01-setup-gdb-silicon</guid>
+            <category><![CDATA[gdb]]></category>
+            <category><![CDATA[debug]]></category>
+            <category><![CDATA[mac]]></category>
+            <pubDate>Sun, 18 Jan 2026 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
