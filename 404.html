@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yrwq</title>
+    <script>
+      (() => {
+        var l = window.location;
+        var redirectPath =
+          "/?/" +
+          l.pathname.slice(1) +
+          l.search.replace(/&/g, "~and~") +
+          l.hash;
+        l.replace(`${l.protocol}//${l.host}${redirectPath}`);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

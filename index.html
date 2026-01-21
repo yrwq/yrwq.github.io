@@ -28,7 +28,21 @@
       title="RSS Feed"
       href="/rss.xml"
     />
-    <script type="module" crossorigin src="/assets/index-FHZ6s2id.js"></script>
+    <script>
+      (() => {
+        var l = window.location;
+        var decoded;
+        if (l.search && l.search[1] === "/") {
+          decoded = l.search
+            .slice(1)
+            .split("&")
+            .map((s) => s.replace(/~and~/g, "&"))
+            .join("?");
+          window.history.replaceState(null, null, decoded + l.hash);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BSdy6hJI.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-D4htMZqV.css">
   </head>
   <body>
