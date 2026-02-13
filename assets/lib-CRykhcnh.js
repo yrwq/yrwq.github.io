@@ -1,1 +1,0 @@
-import{n as e,r as t}from"./index-BSdy6hJI.js";var n=t(e(),1),r=n.createContext({});function i(e){let t=n.useContext(r);return n.useMemo(function(){return typeof e==`function`?e(t):{...t,...e}},[t,e])}export{i as t};
