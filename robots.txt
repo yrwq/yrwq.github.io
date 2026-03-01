@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yrwq.github.io/sitemap.xml

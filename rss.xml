@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[yrwq]]></title>
+        <description><![CDATA[Personal website, blog, and project archive for yrwq.]]></description>
+        <link>https://yrwq.github.io</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 01 Mar 2026 06:03:13 GMT</lastBuildDate>
+        <atom:link href="https://yrwq.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 01 Mar 2026 06:03:13 GMT</pubDate>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[termstart]]></title>
+            <description><![CDATA[<p><strong>type:</strong> project</p>
+<p><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
+<a href="https://yrwq.github.io/termstart" target="_blank">app</a></p>
+<img class="mt-8" width="460" height="300" src="https://yrwq.github.io/projects/termstart.png"/>
+
+<h2>overview</h2>
+<p>manage bookmarks like how you would manage files in a terminal but on a keyboard driven website</p>
+<p>behaves like a small shell:</p>
+<ul>
+<li>navigate directories</li>
+<li>create/delete/move files and directories</li>
+<li>store bookmark URLs in files</li>
+<li>open bookmark files in a new tab</li>
+<li>persist everything to <code>localStorage</code></li>
+</ul>
+<h2>why</h2>
+<p>i always switched between bookmark managers, i used <a href="https://raindrop.io">raindrop</a> for a long time on mac, but on linux i didnt find
+ a solution that fits me. first i written a plain html only page and used it as the new tab, but it was a pain to manage bookmarks 
+ there with hand. i started to add keyboard shortcuts with plain js (this was back in <code>2021</code>) for each bookmark so i didnt have to use the 
+ mouse to open them. at some point i just gave up and used plain text to store links. since i lived in the terminal, i wrote a script to
+ interactively select a bookmark then open it in browser, and this is where i got the idea from. i implemented a very basic prototype in 
+ <code>2022</code> with a simple input bar, where i could type commands like <code>add &lt;key&gt; &lt;url&gt;</code>, <code>ls</code>, <code>open &lt;key&gt;</code></p>
+<p>this is how it looked like back then:</p>
+<img class="mt-8" width="400" src="https://yrwq.github.io/projects/termstart_old.png"/>]]></description>
+            <link>https://yrwq.github.io/projects/termstart</link>
+            <guid isPermaLink="false">https://yrwq.github.io/projects/termstart</guid>
+            <category><![CDATA[project]]></category>
+            <pubDate>Sun, 01 Mar 2026 06:03:13 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
+<p><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
+<a href="https://yrwq.github.io/termstart" target="_blank">app</a></p>
+<img class="mt-8" width="460" height="300" src="https://yrwq.github.io/projects/termstart.png"/>
+
+<h2>overview</h2>
+<p>manage bookmarks like how you would manage files in a terminal but on a keyboard driven website</p>
+<p>behaves like a small shell:</p>
+<ul>
+<li>navigate directories</li>
+<li>create/delete/move files and directories</li>
+<li>store bookmark URLs in files</li>
+<li>open bookmark files in a new tab</li>
+<li>persist everything to <code>localStorage</code></li>
+</ul>
+<h2>why</h2>
+<p>i always switched between bookmark managers, i used <a href="https://raindrop.io">raindrop</a> for a long time on mac, but on linux i didnt find
+ a solution that fits me. first i written a plain html only page and used it as the new tab, but it was a pain to manage bookmarks 
+ there with hand. i started to add keyboard shortcuts with plain js (this was back in <code>2021</code>) for each bookmark so i didnt have to use the 
+ mouse to open them. at some point i just gave up and used plain text to store links. since i lived in the terminal, i wrote a script to
+ interactively select a bookmark then open it in browser, and this is where i got the idea from. i implemented a very basic prototype in 
+ <code>2022</code> with a simple input bar, where i could type commands like <code>add &lt;key&gt; &lt;url&gt;</code>, <code>ls</code>, <code>open &lt;key&gt;</code></p>
+<p>this is how it looked like back then:</p>
+<img class="mt-8" width="400" src="https://yrwq.github.io/projects/termstart_old.png"/>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[debugging x86_64 elf on mac silicon]]></title>
+            <description><![CDATA[<p><strong>type:</strong> blog</p>
+<h2>lima</h2>
+<p>the most straightforward and easiest way is to install a x86_64 linux vm with <a href="https://github.com/lima-vm/lima" target="_blank">lima</a>.</p>
+<pre><code class="language-bash">brew install lima qemu
+</code></pre>
+<ul>
+<li>start an x86_64 lima vm with qemu</li>
+</ul>
+<pre><code class="language-bash">limactl start --arch=x86_64 --vm-type=qemu
+</code></pre>
+<p>you access the vm with <code>lima</code></p>
+<p>now you can use <code>gdb</code> for example to debug x86_64 binaries on the vm.</p>
+<h3>running a kali vm with lima</h3>
+<p>i tried the normal kali iso and the kali vm image from <a href="https://www.kali.org/get-kali/#vm" target="_blank">kali.org</a>, but neither worked.</p>
+<p>my workaround is to setup a debian vm and install kali tools on it.</p>
+<ul>
+<li>create a <code>kali.yaml</code> file with the following content:</li>
+</ul>
+<pre><code class="language-yaml">vmType: &quot;qemu&quot;
+os: &quot;Linux&quot;
+arch: &quot;x86_64&quot;
+
+# use debian cloud image as base (more reliable)
+images:
+  - location: &quot;https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2&quot;
+    arch: &quot;x86_64&quot;
+
+cpus: 4
+memory: &quot;4GiB&quot;
+disk: &quot;60GiB&quot;
+
+firmware:
+  legacyBIOS: false
+
+mounts:
+  - location: &quot;~&quot;
+    writable: true
+
+ssh:
+  localPort: 0
+  loadDotSSHPubKeys: true
+
+containerd:
+  system: false
+  user: false
+
+provision:
+  - mode: system
+    script: |
+      #!/bin/bash
+      set -eux -o pipefail
+      
+      export DEBIAN_FRONTEND=noninteractive
+      apt update
+      apt upgrade -y
+      
+      apt install -y gnupg2 apt-transport-https
+      
+      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list
+      
+      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+      apt update
+      
+      apt install -y kali-linux-core
+      
+</code></pre>
+<p>access the vm with <code>limactl shell kali</code></p>
+<p>if you want you can install</p>
+<ul>
+<li>no gui tools <code>apt install kali-linux-headless</code></li>
+<li>deafult tools <code>apt install kali-linux-default</code></li>
+<li>all of the tools <code>apt install kali-linux-everything</code></li>
+<li>or a category <code>apt install kali-tools-reverse-engineering</code></li>
+</ul>
+]]></description>
+            <link>https://yrwq.github.io/blog/2026-01-gdb-x86_64-silicon</link>
+            <guid isPermaLink="false">https://yrwq.github.io/blog/2026-01-gdb-x86_64-silicon</guid>
+            <category><![CDATA[blog]]></category>
+            <pubDate>Sat, 17 Jan 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> blog</p>
+<h2>lima</h2>
+<p>the most straightforward and easiest way is to install a x86_64 linux vm with <a href="https://github.com/lima-vm/lima" target="_blank">lima</a>.</p>
+<pre><code class="language-bash">brew install lima qemu
+</code></pre>
+<ul>
+<li>start an x86_64 lima vm with qemu</li>
+</ul>
+<pre><code class="language-bash">limactl start --arch=x86_64 --vm-type=qemu
+</code></pre>
+<p>you access the vm with <code>lima</code></p>
+<p>now you can use <code>gdb</code> for example to debug x86_64 binaries on the vm.</p>
+<h3>running a kali vm with lima</h3>
+<p>i tried the normal kali iso and the kali vm image from <a href="https://www.kali.org/get-kali/#vm" target="_blank">kali.org</a>, but neither worked.</p>
+<p>my workaround is to setup a debian vm and install kali tools on it.</p>
+<ul>
+<li>create a <code>kali.yaml</code> file with the following content:</li>
+</ul>
+<pre><code class="language-yaml">vmType: &quot;qemu&quot;
+os: &quot;Linux&quot;
+arch: &quot;x86_64&quot;
+
+# use debian cloud image as base (more reliable)
+images:
+  - location: &quot;https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2&quot;
+    arch: &quot;x86_64&quot;
+
+cpus: 4
+memory: &quot;4GiB&quot;
+disk: &quot;60GiB&quot;
+
+firmware:
+  legacyBIOS: false
+
+mounts:
+  - location: &quot;~&quot;
+    writable: true
+
+ssh:
+  localPort: 0
+  loadDotSSHPubKeys: true
+
+containerd:
+  system: false
+  user: false
+
+provision:
+  - mode: system
+    script: |
+      #!/bin/bash
+      set -eux -o pipefail
+      
+      export DEBIAN_FRONTEND=noninteractive
+      apt update
+      apt upgrade -y
+      
+      apt install -y gnupg2 apt-transport-https
+      
+      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list
+      
+      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+      apt update
+      
+      apt install -y kali-linux-core
+      
+</code></pre>
+<p>access the vm with <code>limactl shell kali</code></p>
+<p>if you want you can install</p>
+<ul>
+<li>no gui tools <code>apt install kali-linux-headless</code></li>
+<li>deafult tools <code>apt install kali-linux-default</code></li>
+<li>all of the tools <code>apt install kali-linux-everything</code></li>
+<li>or a category <code>apt install kali-tools-reverse-engineering</code></li>
+</ul>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>
