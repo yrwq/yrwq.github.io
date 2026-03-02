@@ -4,18 +4,17 @@
         <description><![CDATA[Personal website, blog, and project archive for yrwq.]]></description>
         <link>https://yrwq.github.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 01 Mar 2026 07:38:06 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Mar 2026 23:09:00 GMT</lastBuildDate>
         <atom:link href="https://yrwq.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 01 Mar 2026 07:38:06 GMT</pubDate>
+        <pubDate>Mon, 02 Mar 2026 23:09:00 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[termstart]]></title>
             <description><![CDATA[<p><strong>type:</strong> project</p>
-<p><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
-<a href="https://yrwq.github.io/termstart" target="_blank">app</a></p>
+<link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart.png"/><link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart_old.png"/><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
+<a href="https://yrwq.github.io/termstart" target="_blank">app</a>
 <img class="mt-8" width="460" height="300" src="https://yrwq.github.io/projects/termstart.png"/>
-
-<h2>overview</h2>
+<h2 id="overview"><a aria-hidden="true" tabindex="-1" href="#overview"><span class="icon icon-link"></span></a>overview</h2>
 <p>manage bookmarks like how you would manage files in a terminal but on a keyboard driven website</p>
 <p>behaves like a small shell:</p>
 <ul>
@@ -25,25 +24,24 @@
 <li>open bookmark files in a new tab</li>
 <li>persist everything to <code>localStorage</code></li>
 </ul>
-<h2>why</h2>
+<h2 id="why"><a aria-hidden="true" tabindex="-1" href="#why"><span class="icon icon-link"></span></a>why</h2>
 <p>i always switched between bookmark managers, i used <a href="https://raindrop.io">raindrop</a> for a long time on mac, but on linux i didnt find
- a solution that fits me. first i written a plain html only page and used it as the new tab, but it was a pain to manage bookmarks 
- there with hand. i started to add keyboard shortcuts with plain js (this was back in <code>2021</code>) for each bookmark so i didnt have to use the 
- mouse to open them. at some point i just gave up and used plain text to store links. since i lived in the terminal, i wrote a script to
- interactively select a bookmark then open it in browser, and this is where i got the idea from. i implemented a very basic prototype in 
- <code>2022</code> with a simple input bar, where i could type commands like <code>add &lt;key&gt; &lt;url&gt;</code>, <code>ls</code>, <code>open &lt;key&gt;</code></p>
+a solution that fits me. first i written a plain html only page and used it as the new tab, but it was a pain to manage bookmarks
+there with hand. i started to add keyboard shortcuts with plain js (this was back in <code>2021</code>) for each bookmark so i didnt have to use the
+mouse to open them. at some point i just gave up and used plain text to store links. since i lived in the terminal, i wrote a script to
+interactively select a bookmark then open it in browser, and this is where i got the idea from. i implemented a very basic prototype in
+<code>2022</code> with a simple input bar, where i could type commands like <code>add &lt;key&gt; &lt;url&gt;</code>, <code>ls</code>, <code>open &lt;key&gt;</code></p>
 <p>this is how it looked like back then:</p>
 <img class="mt-8" width="400" src="https://yrwq.github.io/projects/termstart_old.png"/>]]></description>
             <link>https://yrwq.github.io/projects/termstart</link>
             <guid isPermaLink="false">https://yrwq.github.io/projects/termstart</guid>
             <category><![CDATA[project]]></category>
-            <pubDate>Sun, 01 Mar 2026 07:38:06 GMT</pubDate>
+            <pubDate>Mon, 02 Mar 2026 23:09:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
-<p><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
-<a href="https://yrwq.github.io/termstart" target="_blank">app</a></p>
+<link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart.png"/><link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart_old.png"/><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
+<a href="https://yrwq.github.io/termstart" target="_blank">app</a>
 <img class="mt-8" width="460" height="300" src="https://yrwq.github.io/projects/termstart.png"/>
-
-<h2>overview</h2>
+<h2 id="overview"><a aria-hidden="true" tabindex="-1" href="#overview"><span class="icon icon-link"></span></a>overview</h2>
 <p>manage bookmarks like how you would manage files in a terminal but on a keyboard driven website</p>
 <p>behaves like a small shell:</p>
 <ul>
@@ -53,84 +51,81 @@
 <li>open bookmark files in a new tab</li>
 <li>persist everything to <code>localStorage</code></li>
 </ul>
-<h2>why</h2>
+<h2 id="why"><a aria-hidden="true" tabindex="-1" href="#why"><span class="icon icon-link"></span></a>why</h2>
 <p>i always switched between bookmark managers, i used <a href="https://raindrop.io">raindrop</a> for a long time on mac, but on linux i didnt find
- a solution that fits me. first i written a plain html only page and used it as the new tab, but it was a pain to manage bookmarks 
- there with hand. i started to add keyboard shortcuts with plain js (this was back in <code>2021</code>) for each bookmark so i didnt have to use the 
- mouse to open them. at some point i just gave up and used plain text to store links. since i lived in the terminal, i wrote a script to
- interactively select a bookmark then open it in browser, and this is where i got the idea from. i implemented a very basic prototype in 
- <code>2022</code> with a simple input bar, where i could type commands like <code>add &lt;key&gt; &lt;url&gt;</code>, <code>ls</code>, <code>open &lt;key&gt;</code></p>
+a solution that fits me. first i written a plain html only page and used it as the new tab, but it was a pain to manage bookmarks
+there with hand. i started to add keyboard shortcuts with plain js (this was back in <code>2021</code>) for each bookmark so i didnt have to use the
+mouse to open them. at some point i just gave up and used plain text to store links. since i lived in the terminal, i wrote a script to
+interactively select a bookmark then open it in browser, and this is where i got the idea from. i implemented a very basic prototype in
+<code>2022</code> with a simple input bar, where i could type commands like <code>add &lt;key&gt; &lt;url&gt;</code>, <code>ls</code>, <code>open &lt;key&gt;</code></p>
 <p>this is how it looked like back then:</p>
 <img class="mt-8" width="400" src="https://yrwq.github.io/projects/termstart_old.png"/>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[debugging x86_64 elf on mac silicon]]></title>
             <description><![CDATA[<p><strong>type:</strong> blog</p>
-<h2>lima</h2>
+<h2 id="lima"><a aria-hidden="true" tabindex="-1" href="#lima"><span class="icon icon-link"></span></a>lima</h2>
 <p>the most straightforward and easiest way is to install a x86_64 linux vm with <a href="https://github.com/lima-vm/lima" target="_blank">lima</a>.</p>
-<pre><code class="language-bash">brew install lima qemu
-</code></pre>
+<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="bash" data-theme="gruvbox-dark-hard">install lima</figcaption><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="bash" data-theme="gruvbox-dark-hard"><code data-language="bash" data-theme="gruvbox-dark-hard" style="display:grid"><span class="line" data-line=""><span style="color:#FABD2F">brew</span><span style="color:#B8BB26"> install</span><span style="color:#B8BB26"> lima</span><span style="color:#B8BB26"> qemu</span></span></code></pre></figure>
 <ul>
 <li>start an x86_64 lima vm with qemu</li>
 </ul>
-<pre><code class="language-bash">limactl start --arch=x86_64 --vm-type=qemu
-</code></pre>
+<figure data-rehype-pretty-code-figure=""><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="bash" data-theme="gruvbox-dark-hard"><code data-language="bash" data-theme="gruvbox-dark-hard" style="display:grid"><span class="line" data-line=""><span style="color:#FABD2F">limactl</span><span style="color:#B8BB26"> start</span><span style="color:#D3869B"> --arch=x86_64</span><span style="color:#D3869B"> --vm-type=qemu</span></span></code></pre></figure>
 <p>you access the vm with <code>lima</code></p>
 <p>now you can use <code>gdb</code> for example to debug x86_64 binaries on the vm.</p>
-<h3>running a kali vm with lima</h3>
+<h3 id="running-a-kali-vm-with-lima"><a aria-hidden="true" tabindex="-1" href="#running-a-kali-vm-with-lima"><span class="icon icon-link"></span></a>running a kali vm with lima</h3>
 <p>i tried the normal kali iso and the kali vm image from <a href="https://www.kali.org/get-kali/#vm" target="_blank">kali.org</a>, but neither worked.</p>
 <p>my workaround is to setup a debian vm and install kali tools on it.</p>
 <ul>
 <li>create a <code>kali.yaml</code> file with the following content:</li>
 </ul>
-<pre><code class="language-yaml">vmType: &quot;qemu&quot;
-os: &quot;Linux&quot;
-arch: &quot;x86_64&quot;
-
-# use debian cloud image as base (more reliable)
-images:
-  - location: &quot;https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2&quot;
-    arch: &quot;x86_64&quot;
-
-cpus: 4
-memory: &quot;4GiB&quot;
-disk: &quot;60GiB&quot;
-
-firmware:
-  legacyBIOS: false
-
-mounts:
-  - location: &quot;~&quot;
-    writable: true
-
-ssh:
-  localPort: 0
-  loadDotSSHPubKeys: true
-
-containerd:
-  system: false
-  user: false
-
-provision:
-  - mode: system
-    script: |
-      #!/bin/bash
-      set -eux -o pipefail
-      
-      export DEBIAN_FRONTEND=noninteractive
-      apt update
-      apt upgrade -y
-      
-      apt install -y gnupg2 apt-transport-https
-      
-      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list
-      
-      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
-      apt update
-      
-      apt install -y kali-linux-core
-      
-</code></pre>
+<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="yaml" data-theme="gruvbox-dark-hard">kali.yaml</figcaption><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="yaml" data-theme="gruvbox-dark-hard"><code data-line-numbers="" data-language="yaml" data-theme="gruvbox-dark-hard" style="display:grid" data-line-numbers-max-digits="2"><span class="line" data-line=""><span style="color:#8EC07C">vmType</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">qemu</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">os</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">Linux</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">arch</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">x86_64</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#928374;font-style:italic"># use debian cloud image as base (more reliable)</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">images</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> location</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">    arch</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">x86_64</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">cpus</span><span style="color:#A89984">:</span><span style="color:#D3869B"> 4</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">memory</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">4GiB</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">disk</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">60GiB</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">firmware</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  legacyBIOS</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">mounts</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> location</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">~</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">    writable</span><span style="color:#A89984">:</span><span style="color:#D3869B"> true</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">ssh</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  localPort</span><span style="color:#A89984">:</span><span style="color:#D3869B"> 0</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  loadDotSSHPubKeys</span><span style="color:#A89984">:</span><span style="color:#D3869B"> true</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">containerd</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  system</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  user</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">provision</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> mode</span><span style="color:#A89984">:</span><span style="color:#B8BB26"> system</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">    script</span><span style="color:#A89984">:</span><span style="color:#FB4934"> |</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      #!/bin/bash</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      set -eux -o pipefail</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      export DEBIAN_FRONTEND=noninteractive</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt update</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt upgrade -y</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt install -y gnupg2 apt-transport-https</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt update</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt install -y kali-linux-core</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span></code></pre></figure>
 <p>access the vm with <code>limactl shell kali</code></p>
 <p>if you want you can install</p>
 <ul>
@@ -138,78 +133,74 @@ provision:
 <li>deafult tools <code>apt install kali-linux-default</code></li>
 <li>all of the tools <code>apt install kali-linux-everything</code></li>
 <li>or a category <code>apt install kali-tools-reverse-engineering</code></li>
-</ul>
-]]></description>
+</ul>]]></description>
             <link>https://yrwq.github.io/blog/2026-01-gdb-x86_64-silicon</link>
             <guid isPermaLink="false">https://yrwq.github.io/blog/2026-01-gdb-x86_64-silicon</guid>
             <category><![CDATA[blog]]></category>
             <pubDate>Sat, 17 Jan 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><strong>type:</strong> blog</p>
-<h2>lima</h2>
+<h2 id="lima"><a aria-hidden="true" tabindex="-1" href="#lima"><span class="icon icon-link"></span></a>lima</h2>
 <p>the most straightforward and easiest way is to install a x86_64 linux vm with <a href="https://github.com/lima-vm/lima" target="_blank">lima</a>.</p>
-<pre><code class="language-bash">brew install lima qemu
-</code></pre>
+<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="bash" data-theme="gruvbox-dark-hard">install lima</figcaption><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="bash" data-theme="gruvbox-dark-hard"><code data-language="bash" data-theme="gruvbox-dark-hard" style="display:grid"><span class="line" data-line=""><span style="color:#FABD2F">brew</span><span style="color:#B8BB26"> install</span><span style="color:#B8BB26"> lima</span><span style="color:#B8BB26"> qemu</span></span></code></pre></figure>
 <ul>
 <li>start an x86_64 lima vm with qemu</li>
 </ul>
-<pre><code class="language-bash">limactl start --arch=x86_64 --vm-type=qemu
-</code></pre>
+<figure data-rehype-pretty-code-figure=""><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="bash" data-theme="gruvbox-dark-hard"><code data-language="bash" data-theme="gruvbox-dark-hard" style="display:grid"><span class="line" data-line=""><span style="color:#FABD2F">limactl</span><span style="color:#B8BB26"> start</span><span style="color:#D3869B"> --arch=x86_64</span><span style="color:#D3869B"> --vm-type=qemu</span></span></code></pre></figure>
 <p>you access the vm with <code>lima</code></p>
 <p>now you can use <code>gdb</code> for example to debug x86_64 binaries on the vm.</p>
-<h3>running a kali vm with lima</h3>
+<h3 id="running-a-kali-vm-with-lima"><a aria-hidden="true" tabindex="-1" href="#running-a-kali-vm-with-lima"><span class="icon icon-link"></span></a>running a kali vm with lima</h3>
 <p>i tried the normal kali iso and the kali vm image from <a href="https://www.kali.org/get-kali/#vm" target="_blank">kali.org</a>, but neither worked.</p>
 <p>my workaround is to setup a debian vm and install kali tools on it.</p>
 <ul>
 <li>create a <code>kali.yaml</code> file with the following content:</li>
 </ul>
-<pre><code class="language-yaml">vmType: &quot;qemu&quot;
-os: &quot;Linux&quot;
-arch: &quot;x86_64&quot;
-
-# use debian cloud image as base (more reliable)
-images:
-  - location: &quot;https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2&quot;
-    arch: &quot;x86_64&quot;
-
-cpus: 4
-memory: &quot;4GiB&quot;
-disk: &quot;60GiB&quot;
-
-firmware:
-  legacyBIOS: false
-
-mounts:
-  - location: &quot;~&quot;
-    writable: true
-
-ssh:
-  localPort: 0
-  loadDotSSHPubKeys: true
-
-containerd:
-  system: false
-  user: false
-
-provision:
-  - mode: system
-    script: |
-      #!/bin/bash
-      set -eux -o pipefail
-      
-      export DEBIAN_FRONTEND=noninteractive
-      apt update
-      apt upgrade -y
-      
-      apt install -y gnupg2 apt-transport-https
-      
-      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list
-      
-      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
-      apt update
-      
-      apt install -y kali-linux-core
-      
-</code></pre>
+<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="yaml" data-theme="gruvbox-dark-hard">kali.yaml</figcaption><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="yaml" data-theme="gruvbox-dark-hard"><code data-line-numbers="" data-language="yaml" data-theme="gruvbox-dark-hard" style="display:grid" data-line-numbers-max-digits="2"><span class="line" data-line=""><span style="color:#8EC07C">vmType</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">qemu</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">os</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">Linux</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">arch</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">x86_64</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#928374;font-style:italic"># use debian cloud image as base (more reliable)</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">images</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> location</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">    arch</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">x86_64</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">cpus</span><span style="color:#A89984">:</span><span style="color:#D3869B"> 4</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">memory</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">4GiB</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">disk</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">60GiB</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">firmware</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  legacyBIOS</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">mounts</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> location</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">~</span><span style="color:#A89984">&quot;</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">    writable</span><span style="color:#A89984">:</span><span style="color:#D3869B"> true</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">ssh</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  localPort</span><span style="color:#A89984">:</span><span style="color:#D3869B"> 0</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  loadDotSSHPubKeys</span><span style="color:#A89984">:</span><span style="color:#D3869B"> true</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">containerd</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  system</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">  user</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
+<span class="line" data-line=""> </span>
+<span class="line" data-line=""><span style="color:#8EC07C">provision</span><span style="color:#A89984">:</span></span>
+<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> mode</span><span style="color:#A89984">:</span><span style="color:#B8BB26"> system</span></span>
+<span class="line" data-line=""><span style="color:#8EC07C">    script</span><span style="color:#A89984">:</span><span style="color:#FB4934"> |</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      #!/bin/bash</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      set -eux -o pipefail</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      export DEBIAN_FRONTEND=noninteractive</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt update</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt upgrade -y</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt install -y gnupg2 apt-transport-https</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt update</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      apt install -y kali-linux-core</span></span>
+<span class="line" data-line=""><span style="color:#B8BB26">      </span></span></code></pre></figure>
 <p>access the vm with <code>limactl shell kali</code></p>
 <p>if you want you can install</p>
 <ul>
@@ -217,8 +208,7 @@ provision:
 <li>deafult tools <code>apt install kali-linux-default</code></li>
 <li>all of the tools <code>apt install kali-linux-everything</code></li>
 <li>or a category <code>apt install kali-tools-reverse-engineering</code></li>
-</ul>
-]]></content:encoded>
+</ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
