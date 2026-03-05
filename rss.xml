@@ -4,9 +4,9 @@
         <description><![CDATA[Personal website, blog, and project archive for yrwq.]]></description>
         <link>https://yrwq.github.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 02 Mar 2026 23:09:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Mar 2026 16:13:58 GMT</lastBuildDate>
         <atom:link href="https://yrwq.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 02 Mar 2026 23:09:00 GMT</pubDate>
+        <pubDate>Thu, 05 Mar 2026 16:13:58 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[termstart]]></title>
@@ -36,7 +36,7 @@ interactively select a bookmark then open it in browser, and this is where i got
             <link>https://yrwq.github.io/projects/termstart</link>
             <guid isPermaLink="false">https://yrwq.github.io/projects/termstart</guid>
             <category><![CDATA[project]]></category>
-            <pubDate>Mon, 02 Mar 2026 23:09:00 GMT</pubDate>
+            <pubDate>Thu, 05 Mar 2026 16:13:58 GMT</pubDate>
             <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
 <link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart.png"/><link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart_old.png"/><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
 <a href="https://yrwq.github.io/termstart" target="_blank">app</a>
@@ -66,11 +66,11 @@ interactively select a bookmark then open it in browser, and this is where i got
             <description><![CDATA[<p><strong>type:</strong> blog</p>
 <h2 id="lima"><a aria-hidden="true" tabindex="-1" href="#lima"><span class="icon icon-link"></span></a>lima</h2>
 <p>the most straightforward and easiest way is to install a x86_64 linux vm with <a href="https://github.com/lima-vm/lima" target="_blank">lima</a>.</p>
-<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="bash" data-theme="gruvbox-dark-hard">install lima</figcaption><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="bash" data-theme="gruvbox-dark-hard"><code data-language="bash" data-theme="gruvbox-dark-hard" style="display:grid"><span class="line" data-line=""><span style="color:#FABD2F">brew</span><span style="color:#B8BB26"> install</span><span style="color:#B8BB26"> lima</span><span style="color:#B8BB26"> qemu</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="bash" data-theme="github-light github-dark">install lima</figcaption><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">brew</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> lima</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> qemu</span></span></code></pre></figure>
 <ul>
 <li>start an x86_64 lima vm with qemu</li>
 </ul>
-<figure data-rehype-pretty-code-figure=""><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="bash" data-theme="gruvbox-dark-hard"><code data-language="bash" data-theme="gruvbox-dark-hard" style="display:grid"><span class="line" data-line=""><span style="color:#FABD2F">limactl</span><span style="color:#B8BB26"> start</span><span style="color:#D3869B"> --arch=x86_64</span><span style="color:#D3869B"> --vm-type=qemu</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> start</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --arch=x86_64</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --vm-type=qemu</span></span></code></pre></figure>
 <p>you access the vm with <code>lima</code></p>
 <p>now you can use <code>gdb</code> for example to debug x86_64 binaries on the vm.</p>
 <h3 id="running-a-kali-vm-with-lima"><a aria-hidden="true" tabindex="-1" href="#running-a-kali-vm-with-lima"><span class="icon icon-link"></span></a>running a kali vm with lima</h3>
@@ -79,53 +79,53 @@ interactively select a bookmark then open it in browser, and this is where i got
 <ul>
 <li>create a <code>kali.yaml</code> file with the following content:</li>
 </ul>
-<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="yaml" data-theme="gruvbox-dark-hard">kali.yaml</figcaption><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="yaml" data-theme="gruvbox-dark-hard"><code data-line-numbers="" data-language="yaml" data-theme="gruvbox-dark-hard" style="display:grid" data-line-numbers-max-digits="2"><span class="line" data-line=""><span style="color:#8EC07C">vmType</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">qemu</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">os</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">Linux</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">arch</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">x86_64</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#928374;font-style:italic"># use debian cloud image as base (more reliable)</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">images</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> location</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">    arch</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">x86_64</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">cpus</span><span style="color:#A89984">:</span><span style="color:#D3869B"> 4</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">memory</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">4GiB</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">disk</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">60GiB</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">firmware</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  legacyBIOS</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">mounts</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> location</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">~</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">    writable</span><span style="color:#A89984">:</span><span style="color:#D3869B"> true</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">ssh</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  localPort</span><span style="color:#A89984">:</span><span style="color:#D3869B"> 0</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  loadDotSSHPubKeys</span><span style="color:#A89984">:</span><span style="color:#D3869B"> true</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">containerd</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  system</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  user</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">provision</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> mode</span><span style="color:#A89984">:</span><span style="color:#B8BB26"> system</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">    script</span><span style="color:#A89984">:</span><span style="color:#FB4934"> |</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      #!/bin/bash</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      set -eux -o pipefail</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      export DEBIAN_FRONTEND=noninteractive</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt update</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt upgrade -y</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt install -y gnupg2 apt-transport-https</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt update</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt install -y kali-linux-core</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="yaml" data-theme="github-light github-dark">kali.yaml</figcaption><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-line-numbers="" data-language="yaml" data-theme="github-light github-dark" style="display:grid" data-line-numbers-max-digits="2"><span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vmType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;qemu&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">os</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;Linux&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">arch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;x86_64&quot;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># use debian cloud image as base (more reliable)</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">images</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">location</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    arch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;x86_64&quot;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">cpus</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">4</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">memory</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;4GiB&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">disk</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;60GiB&quot;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">firmware</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  legacyBIOS</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">mounts</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">location</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;~&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    writable</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">ssh</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  localPort</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  loadDotSSHPubKeys</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">containerd</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  system</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  user</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">provision</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">mode</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">system</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      #!/bin/bash</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      set -eux -o pipefail</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      export DEBIAN_FRONTEND=noninteractive</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt update</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt upgrade -y</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y gnupg2 apt-transport-https</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt update</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y kali-linux-core</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span></code></pre></figure>
 <p>access the vm with <code>limactl shell kali</code></p>
 <p>if you want you can install</p>
 <ul>
@@ -141,11 +141,11 @@ interactively select a bookmark then open it in browser, and this is where i got
             <content:encoded><![CDATA[<p><strong>type:</strong> blog</p>
 <h2 id="lima"><a aria-hidden="true" tabindex="-1" href="#lima"><span class="icon icon-link"></span></a>lima</h2>
 <p>the most straightforward and easiest way is to install a x86_64 linux vm with <a href="https://github.com/lima-vm/lima" target="_blank">lima</a>.</p>
-<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="bash" data-theme="gruvbox-dark-hard">install lima</figcaption><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="bash" data-theme="gruvbox-dark-hard"><code data-language="bash" data-theme="gruvbox-dark-hard" style="display:grid"><span class="line" data-line=""><span style="color:#FABD2F">brew</span><span style="color:#B8BB26"> install</span><span style="color:#B8BB26"> lima</span><span style="color:#B8BB26"> qemu</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="bash" data-theme="github-light github-dark">install lima</figcaption><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">brew</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> lima</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> qemu</span></span></code></pre></figure>
 <ul>
 <li>start an x86_64 lima vm with qemu</li>
 </ul>
-<figure data-rehype-pretty-code-figure=""><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="bash" data-theme="gruvbox-dark-hard"><code data-language="bash" data-theme="gruvbox-dark-hard" style="display:grid"><span class="line" data-line=""><span style="color:#FABD2F">limactl</span><span style="color:#B8BB26"> start</span><span style="color:#D3869B"> --arch=x86_64</span><span style="color:#D3869B"> --vm-type=qemu</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> start</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --arch=x86_64</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --vm-type=qemu</span></span></code></pre></figure>
 <p>you access the vm with <code>lima</code></p>
 <p>now you can use <code>gdb</code> for example to debug x86_64 binaries on the vm.</p>
 <h3 id="running-a-kali-vm-with-lima"><a aria-hidden="true" tabindex="-1" href="#running-a-kali-vm-with-lima"><span class="icon icon-link"></span></a>running a kali vm with lima</h3>
@@ -154,53 +154,53 @@ interactively select a bookmark then open it in browser, and this is where i got
 <ul>
 <li>create a <code>kali.yaml</code> file with the following content:</li>
 </ul>
-<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="yaml" data-theme="gruvbox-dark-hard">kali.yaml</figcaption><pre style="background-color:#1d2021;color:#ebdbb2" tabindex="0" data-language="yaml" data-theme="gruvbox-dark-hard"><code data-line-numbers="" data-language="yaml" data-theme="gruvbox-dark-hard" style="display:grid" data-line-numbers-max-digits="2"><span class="line" data-line=""><span style="color:#8EC07C">vmType</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">qemu</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">os</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">Linux</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">arch</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">x86_64</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#928374;font-style:italic"># use debian cloud image as base (more reliable)</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">images</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> location</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">    arch</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">x86_64</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">cpus</span><span style="color:#A89984">:</span><span style="color:#D3869B"> 4</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">memory</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">4GiB</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">disk</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">60GiB</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">firmware</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  legacyBIOS</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">mounts</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> location</span><span style="color:#A89984">:</span><span style="color:#A89984"> &quot;</span><span style="color:#B8BB26">~</span><span style="color:#A89984">&quot;</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">    writable</span><span style="color:#A89984">:</span><span style="color:#D3869B"> true</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">ssh</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  localPort</span><span style="color:#A89984">:</span><span style="color:#D3869B"> 0</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  loadDotSSHPubKeys</span><span style="color:#A89984">:</span><span style="color:#D3869B"> true</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">containerd</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  system</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">  user</span><span style="color:#A89984">:</span><span style="color:#D3869B"> false</span></span>
-<span class="line" data-line=""> </span>
-<span class="line" data-line=""><span style="color:#8EC07C">provision</span><span style="color:#A89984">:</span></span>
-<span class="line" data-line=""><span style="color:#A89984">  -</span><span style="color:#8EC07C"> mode</span><span style="color:#A89984">:</span><span style="color:#B8BB26"> system</span></span>
-<span class="line" data-line=""><span style="color:#8EC07C">    script</span><span style="color:#A89984">:</span><span style="color:#FB4934"> |</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      #!/bin/bash</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      set -eux -o pipefail</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      export DEBIAN_FRONTEND=noninteractive</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt update</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt upgrade -y</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt install -y gnupg2 apt-transport-https</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt update</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      apt install -y kali-linux-core</span></span>
-<span class="line" data-line=""><span style="color:#B8BB26">      </span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="yaml" data-theme="github-light github-dark">kali.yaml</figcaption><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-line-numbers="" data-language="yaml" data-theme="github-light github-dark" style="display:grid" data-line-numbers-max-digits="2"><span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vmType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;qemu&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">os</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;Linux&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">arch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;x86_64&quot;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># use debian cloud image as base (more reliable)</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">images</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">location</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    arch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;x86_64&quot;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">cpus</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">4</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">memory</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;4GiB&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">disk</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;60GiB&quot;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">firmware</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  legacyBIOS</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">mounts</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">location</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;~&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    writable</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">ssh</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  localPort</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  loadDotSSHPubKeys</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">containerd</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  system</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">  user</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">provision</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">mode</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">system</span></span>
+<span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      #!/bin/bash</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      set -eux -o pipefail</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      export DEBIAN_FRONTEND=noninteractive</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt update</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt upgrade -y</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y gnupg2 apt-transport-https</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt update</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y kali-linux-core</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span></code></pre></figure>
 <p>access the vm with <code>limactl shell kali</code></p>
 <p>if you want you can install</p>
 <ul>
