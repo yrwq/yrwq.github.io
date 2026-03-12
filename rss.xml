@@ -4,9 +4,9 @@
         <description><![CDATA[Personal website, blog, and project archive for yrwq.]]></description>
         <link>https://yrwq.github.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 07 Mar 2026 07:20:28 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Mar 2026 07:28:18 GMT</lastBuildDate>
         <atom:link href="https://yrwq.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 07 Mar 2026 07:20:28 GMT</pubDate>
+        <pubDate>Thu, 12 Mar 2026 07:28:18 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[termstart]]></title>
@@ -36,7 +36,7 @@ interactively select a bookmark then open it in browser, and this is where i got
             <link>https://yrwq.github.io/projects/termstart</link>
             <guid isPermaLink="false">https://yrwq.github.io/projects/termstart</guid>
             <category><![CDATA[project]]></category>
-            <pubDate>Sat, 07 Mar 2026 07:20:28 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 07:28:18 GMT</pubDate>
             <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
 <link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart.png"/><link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart_old.png"/><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
 <a href="https://yrwq.github.io/termstart" target="_blank">app</a>
