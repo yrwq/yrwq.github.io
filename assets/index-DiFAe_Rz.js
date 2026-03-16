@@ -118,7 +118,7 @@ const value = 42;
 \`oneline code\`
 
 - list item 1
-- list item 2`}];function na(){return ta.filter(e=>!e.draft).sort((e,t)=>new Date(t.date).getTime()-new Date(e.date).getTime())}const ra=[{slug:`termstart`,title:`termstart`,date:`2026-03-16T10:11:01.685Z`,description:`terminal themed bookmark manager for web browsers`,tags:[],stack:[`react`,`bun`,`vite`],status:`active`,draft:!1,readingTime:`2 min read`,content:`<a href="https://github.com/yrwq/termstart" target="_blank">source</a>
+- list item 2`}];function na(){return ta.filter(e=>!e.draft).sort((e,t)=>new Date(t.date).getTime()-new Date(e.date).getTime())}const ra=[{slug:`termstart`,title:`termstart`,date:`2026-03-16T10:17:24.891Z`,description:`terminal themed bookmark manager for web browsers`,tags:[],stack:[`react`,`bun`,`vite`],status:`active`,draft:!1,readingTime:`2 min read`,content:`<a href="https://github.com/yrwq/termstart" target="_blank">source</a>
 <a href="https://yrwq.github.io/termstart" target="_blank">app</a>
 
 <img className="mt-8" width="460" height="300" src="/projects/termstart.png"/>
