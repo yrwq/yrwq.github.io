@@ -4,86 +4,80 @@
         <description><![CDATA[Personal website, blog, and project archive for yrwq.]]></description>
         <link>https://yrwq.github.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 16 Mar 2026 10:17:27 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jul 2026 10:53:44 GMT</lastBuildDate>
         <atom:link href="https://yrwq.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 16 Mar 2026 10:17:27 GMT</pubDate>
+        <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
-            <title><![CDATA[termstart]]></title>
-            <description><![CDATA[<p><strong>type:</strong> project</p>
-<link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart.png"/><link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart_old.png"/><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
-<a href="https://yrwq.github.io/termstart" target="_blank">app</a>
-<img class="mt-8" width="460" height="300" src="https://yrwq.github.io/projects/termstart.png"/>
-<h2 id="overview"><a aria-hidden="true" tabindex="-1" href="#overview"><span class="icon icon-link"></span></a>overview</h2>
-<p>manage bookmarks like how you would manage files in a terminal but on a keyboard driven website</p>
-<p>behaves like a small shell:</p>
+            <title><![CDATA[how i manage windows on macos]]></title>
+            <description><![CDATA[<p><strong>type:</strong> blog</p>
+<p>two tools: rectangle for window placement, hyper key to make the shortcuts reachable. no tiling wm, no SIP hacks, no bullshit.</p>
+<h2 id="rectangle"><a aria-hidden="true" tabindex="-1" href="#rectangle"><span class="icon icon-link"></span></a>rectangle</h2>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">brew</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --cask</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> rectangle</span></span></code></pre></figure>
+<p>resize, snap, center, move windows across monitors and spaces. no automatic tiling, no layout algorithm</p>
+<p>four things i actually use:</p>
 <ul>
-<li>navigate directories</li>
-<li>create/delete/move files and directories</li>
-<li>store bookmark URLs in files</li>
-<li>open bookmark files in a new tab</li>
-<li>persist everything to <code>localStorage</code></li>
+<li><strong>resize</strong> — snap to halves, thirds, corners</li>
+<li><strong>center</strong> — float centered at reasonable size</li>
+<li><strong>snap</strong> — drag to screen edges</li>
+<li><strong>move</strong> — next monitor or space</li>
 </ul>
-<h2 id="why"><a aria-hidden="true" tabindex="-1" href="#why"><span class="icon icon-link"></span></a>why</h2>
-<p>i always switched between bookmark managers, i used <a href="https://raindrop.io">raindrop</a> for a long time on mac, but on linux i didnt find
-a solution that fits me. first i written a plain html only page and used it as the new tab, but it was a pain to manage bookmarks
-there with hand. i started to add keyboard shortcuts with plain js (this was back in <code>2021</code>) for each bookmark so i didnt have to use the
-mouse to open them. at some point i just gave up and used plain text to store links. since i lived in the terminal, i wrote a script to
-interactively select a bookmark then open it in browser, and this is where i got the idea from. i implemented a very basic prototype in
-<code>2022</code> with a simple input bar, where i could type commands like <code>add &lt;key&gt; &lt;url&gt;</code>, <code>ls</code>, <code>open &lt;key&gt;</code></p>
-<p>this is how it looked like back then:</p>
-<img class="mt-8" width="400" src="https://yrwq.github.io/projects/termstart_old.png"/>]]></description>
-            <link>https://yrwq.github.io/projects/termstart</link>
-            <guid isPermaLink="false">https://yrwq.github.io/projects/termstart</guid>
-            <category><![CDATA[project]]></category>
-            <pubDate>Mon, 16 Mar 2026 10:17:27 GMT</pubDate>
-            <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
-<link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart.png"/><link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart_old.png"/><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
-<a href="https://yrwq.github.io/termstart" target="_blank">app</a>
-<img class="mt-8" width="460" height="300" src="https://yrwq.github.io/projects/termstart.png"/>
-<h2 id="overview"><a aria-hidden="true" tabindex="-1" href="#overview"><span class="icon icon-link"></span></a>overview</h2>
-<p>manage bookmarks like how you would manage files in a terminal but on a keyboard driven website</p>
-<p>behaves like a small shell:</p>
+<p>pressing the same shortcut cycles through sizes: left half once = 50%, again = third, again = two-thirds. no need for separate bindings.</p>
+<h2 id="hyper-key"><a aria-hidden="true" tabindex="-1" href="#hyper-key"><span class="icon icon-link"></span></a>hyper key</h2>
+<p>rectangle&#x27;s defaults are <code>Ctrl+Option+Shift+Cmd</code> — four modifiers at once. not realistic to type by hand.</p>
+<p><a href="https://hyperkey.app/">hyperkey</a> maps caps lock to all four modifiers. install it, enable caps lock as hyper, done.</p>
+<p>every rectangle action becomes <code>Hyper + one key</code>.</p>
+<h2 id="my-bindings"><a aria-hidden="true" tabindex="-1" href="#my-bindings"><span class="icon icon-link"></span></a>my bindings</h2>
+<table><thead><tr><th>key</th><th>action</th></tr></thead><tbody><tr><td><code>Hyper+Left</code></td><td>left half</td></tr><tr><td><code>Hyper+Right</code></td><td>right half</td></tr><tr><td><code>Hyper+Up</code></td><td>top half</td></tr><tr><td><code>Hyper+Down</code></td><td>bottom half</td></tr><tr><td><code>Hyper+J</code></td><td>bottom third</td></tr><tr><td><code>Hyper+K</code></td><td>top third</td></tr><tr><td><code>Hyper+Return</code></td><td>maximize</td></tr><tr><td><code>Hyper+C</code></td><td>center</td></tr><tr><td><code>Hyper+D</code></td><td>next display</td></tr><tr><td><code>Hyper+N</code></td><td>next space</td></tr></tbody></table>
+<h2 id="why-not-yabai"><a aria-hidden="true" tabindex="-1" href="#why-not-yabai"><span class="icon icon-link"></span></a>why not yabai?</h2>
+<p>yabai requires disabling SIP, scripting additions, constant maintenance, breakage on every macOS update. rectangle does what i need with zero config beyond shortcuts. no surprises.</p>
+<p>on linux i use wayland with a tiling wm. on macOS, rectangle is the line where the effort-to-benefit ratio stops making sense.</p>]]></description>
+            <link>https://yrwq.github.io/blog/2026-06-rectangle-hyper-key</link>
+            <guid isPermaLink="false">https://yrwq.github.io/blog/2026-06-rectangle-hyper-key</guid>
+            <category><![CDATA[blog]]></category>
+            <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> blog</p>
+<p>two tools: rectangle for window placement, hyper key to make the shortcuts reachable. no tiling wm, no SIP hacks, no bullshit.</p>
+<h2 id="rectangle"><a aria-hidden="true" tabindex="-1" href="#rectangle"><span class="icon icon-link"></span></a>rectangle</h2>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">brew</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --cask</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> rectangle</span></span></code></pre></figure>
+<p>resize, snap, center, move windows across monitors and spaces. no automatic tiling, no layout algorithm</p>
+<p>four things i actually use:</p>
 <ul>
-<li>navigate directories</li>
-<li>create/delete/move files and directories</li>
-<li>store bookmark URLs in files</li>
-<li>open bookmark files in a new tab</li>
-<li>persist everything to <code>localStorage</code></li>
+<li><strong>resize</strong> — snap to halves, thirds, corners</li>
+<li><strong>center</strong> — float centered at reasonable size</li>
+<li><strong>snap</strong> — drag to screen edges</li>
+<li><strong>move</strong> — next monitor or space</li>
 </ul>
-<h2 id="why"><a aria-hidden="true" tabindex="-1" href="#why"><span class="icon icon-link"></span></a>why</h2>
-<p>i always switched between bookmark managers, i used <a href="https://raindrop.io">raindrop</a> for a long time on mac, but on linux i didnt find
-a solution that fits me. first i written a plain html only page and used it as the new tab, but it was a pain to manage bookmarks
-there with hand. i started to add keyboard shortcuts with plain js (this was back in <code>2021</code>) for each bookmark so i didnt have to use the
-mouse to open them. at some point i just gave up and used plain text to store links. since i lived in the terminal, i wrote a script to
-interactively select a bookmark then open it in browser, and this is where i got the idea from. i implemented a very basic prototype in
-<code>2022</code> with a simple input bar, where i could type commands like <code>add &lt;key&gt; &lt;url&gt;</code>, <code>ls</code>, <code>open &lt;key&gt;</code></p>
-<p>this is how it looked like back then:</p>
-<img class="mt-8" width="400" src="https://yrwq.github.io/projects/termstart_old.png"/>]]></content:encoded>
+<p>pressing the same shortcut cycles through sizes: left half once = 50%, again = third, again = two-thirds. no need for separate bindings.</p>
+<h2 id="hyper-key"><a aria-hidden="true" tabindex="-1" href="#hyper-key"><span class="icon icon-link"></span></a>hyper key</h2>
+<p>rectangle&#x27;s defaults are <code>Ctrl+Option+Shift+Cmd</code> — four modifiers at once. not realistic to type by hand.</p>
+<p><a href="https://hyperkey.app/">hyperkey</a> maps caps lock to all four modifiers. install it, enable caps lock as hyper, done.</p>
+<p>every rectangle action becomes <code>Hyper + one key</code>.</p>
+<h2 id="my-bindings"><a aria-hidden="true" tabindex="-1" href="#my-bindings"><span class="icon icon-link"></span></a>my bindings</h2>
+<table><thead><tr><th>key</th><th>action</th></tr></thead><tbody><tr><td><code>Hyper+Left</code></td><td>left half</td></tr><tr><td><code>Hyper+Right</code></td><td>right half</td></tr><tr><td><code>Hyper+Up</code></td><td>top half</td></tr><tr><td><code>Hyper+Down</code></td><td>bottom half</td></tr><tr><td><code>Hyper+J</code></td><td>bottom third</td></tr><tr><td><code>Hyper+K</code></td><td>top third</td></tr><tr><td><code>Hyper+Return</code></td><td>maximize</td></tr><tr><td><code>Hyper+C</code></td><td>center</td></tr><tr><td><code>Hyper+D</code></td><td>next display</td></tr><tr><td><code>Hyper+N</code></td><td>next space</td></tr></tbody></table>
+<h2 id="why-not-yabai"><a aria-hidden="true" tabindex="-1" href="#why-not-yabai"><span class="icon icon-link"></span></a>why not yabai?</h2>
+<p>yabai requires disabling SIP, scripting additions, constant maintenance, breakage on every macOS update. rectangle does what i need with zero config beyond shortcuts. no surprises.</p>
+<p>on linux i use wayland with a tiling wm. on macOS, rectangle is the line where the effort-to-benefit ratio stops making sense.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[debugging x86_64 elf on mac silicon]]></title>
             <description><![CDATA[<p><strong>type:</strong> blog</p>
+<p>apple silicon is ARM. x86_64 ELF binaries are linux/intel. there is no native path — rosetta 2 translates mach-o x86_64, not ELF, and lldb on macOS cannot attach to ELF targets regardless.</p>
+<p>the only correct approach is a real x86_64 environment.</p>
 <h2 id="lima"><a aria-hidden="true" tabindex="-1" href="#lima"><span class="icon icon-link"></span></a>lima</h2>
-<p>the most straightforward and easiest way is to install a x86_64 linux vm with <a href="https://github.com/lima-vm/lima" target="_blank">lima</a>.</p>
-<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="bash" data-theme="github-light github-dark">install lima</figcaption><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">brew</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> lima</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> qemu</span></span></code></pre></figure>
-<ul>
-<li>start an x86_64 lima vm with qemu</li>
-</ul>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> start</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --arch=x86_64</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --vm-type=qemu</span></span></code></pre></figure>
-<p>you access the vm with <code>lima</code></p>
-<p>now you can use <code>gdb</code> for example to debug x86_64 binaries on the vm.</p>
-<h3 id="running-a-kali-vm-with-lima"><a aria-hidden="true" tabindex="-1" href="#running-a-kali-vm-with-lima"><span class="icon icon-link"></span></a>running a kali vm with lima</h3>
-<p>i tried the normal kali iso and the kali vm image from <a href="https://www.kali.org/get-kali/#vm" target="_blank">kali.org</a>, but neither worked.</p>
-<p>my workaround is to setup a debian vm and install kali tools on it.</p>
-<ul>
-<li>create a <code>kali.yaml</code> file with the following content:</li>
-</ul>
-<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="yaml" data-theme="github-light github-dark">kali.yaml</figcaption><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-line-numbers="" data-language="yaml" data-theme="github-light github-dark" style="display:grid" data-line-numbers-max-digits="2"><span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vmType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;qemu&quot;</span></span>
+<p>run an x86_64 linux vm with <a href="https://github.com/lima-vm/lima">lima</a>.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">brew</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> lima</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> qemu</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> start</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --arch=x86_64</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --vm-type=qemu</span></span></code></pre></figure>
+<p>access it with <code>lima</code>, then use <code>gdb</code> normally inside the vm.</p>
+<p><strong>note:</strong> lima uses QEMU TCG (software emulation) for non-native architectures. Apple&#x27;s Hypervisor framework only accelerates native ARM guests, so x86_64 emulation is slow. expect 5-10x slowdown compared to native. this is not a lima issue.</p>
+<h3 id="kali-vm-workaround"><a aria-hidden="true" tabindex="-1" href="#kali-vm-workaround"><span class="icon icon-link"></span></a>kali vm workaround</h3>
+<p>the normal kali iso and the kali vm image from kali.org don&#x27;t work on lima.</p>
+<p>the workaround: debian vm + kali tools on top.</p>
+<p><code>kali.yaml</code>:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vmType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;qemu&quot;</span></span>
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">os</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;Linux&quot;</span></span>
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">arch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;x86_64&quot;</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># use debian cloud image as base (more reliable)</span></span>
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">images</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
 <span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">location</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2&quot;</span></span>
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    arch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;x86_64&quot;</span></span>
@@ -112,53 +106,47 @@ interactively select a bookmark then open it in browser, and this is where i got
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      #!/bin/bash</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      set -eux -o pipefail</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      export DEBIAN_FRONTEND=noninteractive</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt update</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt upgrade -y</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y gnupg2 apt-transport-https</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt update</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y kali-linux-core</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span></code></pre></figure>
-<p>access the vm with <code>limactl shell kali</code></p>
-<p>if you want you can install</p>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y kali-linux-core</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> start</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> kali.yaml</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> shell</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> kali</span></span></code></pre></figure>
+<p>optional kali toolset install:</p>
 <ul>
-<li>no gui tools <code>apt install kali-linux-headless</code></li>
-<li>deafult tools <code>apt install kali-linux-default</code></li>
-<li>all of the tools <code>apt install kali-linux-everything</code></li>
-<li>or a category <code>apt install kali-tools-reverse-engineering</code></li>
-</ul>]]></description>
+<li><code>kali-linux-headless</code> — no-gui tools</li>
+<li><code>kali-linux-default</code> — default tools</li>
+<li><code>kali-linux-everything</code> — all tools</li>
+<li><code>kali-tools-reverse-engineering</code> — re tools only</li>
+</ul>
+<h2 id="alternatives"><a aria-hidden="true" tabindex="-1" href="#alternatives"><span class="icon icon-link"></span></a>alternatives</h2>
+<p><strong>utm</strong> — if you want a gui. same underlying QEMU performance as lima. easier for multiple vms.</p>
+<p><strong>gdbserver</strong> — run <code>gdbserver</code> inside the vm, connect from a gdb client on the host. faster iteration than shelling into the vm every time.</p>]]></description>
             <link>https://yrwq.github.io/blog/2026-01-gdb-x86_64-silicon</link>
             <guid isPermaLink="false">https://yrwq.github.io/blog/2026-01-gdb-x86_64-silicon</guid>
             <category><![CDATA[blog]]></category>
             <pubDate>Sat, 17 Jan 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><strong>type:</strong> blog</p>
+<p>apple silicon is ARM. x86_64 ELF binaries are linux/intel. there is no native path — rosetta 2 translates mach-o x86_64, not ELF, and lldb on macOS cannot attach to ELF targets regardless.</p>
+<p>the only correct approach is a real x86_64 environment.</p>
 <h2 id="lima"><a aria-hidden="true" tabindex="-1" href="#lima"><span class="icon icon-link"></span></a>lima</h2>
-<p>the most straightforward and easiest way is to install a x86_64 linux vm with <a href="https://github.com/lima-vm/lima" target="_blank">lima</a>.</p>
-<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="bash" data-theme="github-light github-dark">install lima</figcaption><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">brew</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> lima</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> qemu</span></span></code></pre></figure>
-<ul>
-<li>start an x86_64 lima vm with qemu</li>
-</ul>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> start</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --arch=x86_64</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --vm-type=qemu</span></span></code></pre></figure>
-<p>you access the vm with <code>lima</code></p>
-<p>now you can use <code>gdb</code> for example to debug x86_64 binaries on the vm.</p>
-<h3 id="running-a-kali-vm-with-lima"><a aria-hidden="true" tabindex="-1" href="#running-a-kali-vm-with-lima"><span class="icon icon-link"></span></a>running a kali vm with lima</h3>
-<p>i tried the normal kali iso and the kali vm image from <a href="https://www.kali.org/get-kali/#vm" target="_blank">kali.org</a>, but neither worked.</p>
-<p>my workaround is to setup a debian vm and install kali tools on it.</p>
-<ul>
-<li>create a <code>kali.yaml</code> file with the following content:</li>
-</ul>
-<figure data-rehype-pretty-code-figure=""><figcaption data-rehype-pretty-code-title="" data-language="yaml" data-theme="github-light github-dark">kali.yaml</figcaption><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-line-numbers="" data-language="yaml" data-theme="github-light github-dark" style="display:grid" data-line-numbers-max-digits="2"><span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vmType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;qemu&quot;</span></span>
+<p>run an x86_64 linux vm with <a href="https://github.com/lima-vm/lima">lima</a>.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">brew</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> lima</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> qemu</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> start</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --arch=x86_64</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --vm-type=qemu</span></span></code></pre></figure>
+<p>access it with <code>lima</code>, then use <code>gdb</code> normally inside the vm.</p>
+<p><strong>note:</strong> lima uses QEMU TCG (software emulation) for non-native architectures. Apple&#x27;s Hypervisor framework only accelerates native ARM guests, so x86_64 emulation is slow. expect 5-10x slowdown compared to native. this is not a lima issue.</p>
+<h3 id="kali-vm-workaround"><a aria-hidden="true" tabindex="-1" href="#kali-vm-workaround"><span class="icon icon-link"></span></a>kali vm workaround</h3>
+<p>the normal kali iso and the kali vm image from kali.org don&#x27;t work on lima.</p>
+<p>the workaround: debian vm + kali tools on top.</p>
+<p><code>kali.yaml</code>:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vmType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;qemu&quot;</span></span>
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">os</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;Linux&quot;</span></span>
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">arch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;x86_64&quot;</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># use debian cloud image as base (more reliable)</span></span>
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">images</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
 <span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">location</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2&quot;</span></span>
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    arch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;x86_64&quot;</span></span>
@@ -187,28 +175,309 @@ interactively select a bookmark then open it in browser, and this is where i got
 <span data-line=""><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">    script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      #!/bin/bash</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      set -eux -o pipefail</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      export DEBIAN_FRONTEND=noninteractive</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt update</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt upgrade -y</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y gnupg2 apt-transport-https</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      echo &quot;deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware&quot; &gt; /etc/apt/sources.list.d/kali.list</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      wget -q -O - https://archive.kali.org/archive-key.asc | gpg --dearmor &gt; /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg</span></span>
 <span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt update</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y kali-linux-core</span></span>
-<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      </span></span></code></pre></figure>
-<p>access the vm with <code>limactl shell kali</code></p>
-<p>if you want you can install</p>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      apt install -y kali-linux-core</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> start</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> kali.yaml</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limactl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> shell</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> kali</span></span></code></pre></figure>
+<p>optional kali toolset install:</p>
 <ul>
-<li>no gui tools <code>apt install kali-linux-headless</code></li>
-<li>deafult tools <code>apt install kali-linux-default</code></li>
-<li>all of the tools <code>apt install kali-linux-everything</code></li>
-<li>or a category <code>apt install kali-tools-reverse-engineering</code></li>
-</ul>]]></content:encoded>
+<li><code>kali-linux-headless</code> — no-gui tools</li>
+<li><code>kali-linux-default</code> — default tools</li>
+<li><code>kali-linux-everything</code> — all tools</li>
+<li><code>kali-tools-reverse-engineering</code> — re tools only</li>
+</ul>
+<h2 id="alternatives"><a aria-hidden="true" tabindex="-1" href="#alternatives"><span class="icon icon-link"></span></a>alternatives</h2>
+<p><strong>utm</strong> — if you want a gui. same underlying QEMU performance as lima. easier for multiple vms.</p>
+<p><strong>gdbserver</strong> — run <code>gdbserver</code> inside the vm, connect from a gdb client on the host. faster iteration than shelling into the vm every time.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[hello world]]></title>
+            <description><![CDATA[<p><strong>type:</strong> blog</p>
+<p>i needed a place to dump what im actually working on. not a &quot;personal brand&quot;, not a content strategy — just a directory of things i build and the bullshit i run into.</p>
+<p>stack is bun + vite + react + mdx. flat files in <code>src/content/</code>, rendered as routes. no CMS, no database, no VC-funded layer cake between me and text. compiles to static files, deploys to github pages.</p>
+<p>the layout is an app shell with resizable panels and a terminal theme. keyboard-driven because reaching for a mouse is a productivity leak.</p>
+<p>posts will be sparse. they will be specific. if you want weekly content go somewhere else.</p>]]></description>
+            <link>https://yrwq.github.io/blog/2026-01-hello-world</link>
+            <guid isPermaLink="false">https://yrwq.github.io/blog/2026-01-hello-world</guid>
+            <category><![CDATA[blog]]></category>
+            <pubDate>Fri, 16 Jan 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> blog</p>
+<p>i needed a place to dump what im actually working on. not a &quot;personal brand&quot;, not a content strategy — just a directory of things i build and the bullshit i run into.</p>
+<p>stack is bun + vite + react + mdx. flat files in <code>src/content/</code>, rendered as routes. no CMS, no database, no VC-funded layer cake between me and text. compiles to static files, deploys to github pages.</p>
+<p>the layout is an app shell with resizable panels and a terminal theme. keyboard-driven because reaching for a mouse is a productivity leak.</p>
+<p>posts will be sparse. they will be specific. if you want weekly content go somewhere else.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[mutt-wizard]]></title>
+            <description><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/mutt-wizard" target="_blank">source</a>
+<p>rust rewrite of luke smith&#x27;s mutt-wizard. one command generates configs for neomutt, mbsync, and msmtp. passwords go in pass.</p>
+<pre><code>mw add user@gmail.com
+</code></pre>
+<p>requires neomutt, isync, msmtp, pass, and gpg.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">gpg</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --full-generate-key</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pass</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> init</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> your@email.com</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mw</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> add</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> user@gmail.com</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mbsync</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -a</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">neomutt</span></span></code></pre></figure>
+<p>reads <code>domains.csv</code> for known IMAP/SMTP servers. if your provider isn&#x27;t in the list you have to add it yourself.</p>]]></description>
+            <link>https://yrwq.github.io/projects/mutt-wizard</link>
+            <guid isPermaLink="false">https://yrwq.github.io/projects/mutt-wizard</guid>
+            <category><![CDATA[project]]></category>
+            <pubDate>Sun, 01 Jun 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/mutt-wizard" target="_blank">source</a>
+<p>rust rewrite of luke smith&#x27;s mutt-wizard. one command generates configs for neomutt, mbsync, and msmtp. passwords go in pass.</p>
+<pre><code>mw add user@gmail.com
+</code></pre>
+<p>requires neomutt, isync, msmtp, pass, and gpg.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">gpg</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --full-generate-key</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pass</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> init</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> your@email.com</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mw</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> add</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> user@gmail.com</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mbsync</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -a</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">neomutt</span></span></code></pre></figure>
+<p>reads <code>domains.csv</code> for known IMAP/SMTP servers. if your provider isn&#x27;t in the list you have to add it yourself.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[bmf]]></title>
+            <description><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/bmf" target="_blank">source</a>
+<p>reads <code>places.sqlite</code> directly, gives you a search box. type a few chars, press enter, opens in firefox.</p>
+<pre><code>bmf                   # opens the TUI
+bmf --db &lt;path&gt;       # custom places.sqlite path
+</code></pre>
+<table><thead><tr><th>key</th><th>action</th></tr></thead><tbody><tr><td><code>/</code></td><td>search</td></tr><tr><td><code>Enter</code></td><td>open in firefox</td></tr><tr><td><code>r</code></td><td>reload bookmarks</td></tr><tr><td><code>j</code>/<code>k</code></td><td>navigate</td></tr><tr><td><code>q</code>/<code>Esc</code></td><td>quit</td></tr></tbody></table>
+<p>rusqlite + a tui framework. one binary.</p>]]></description>
+            <link>https://yrwq.github.io/projects/bmf</link>
+            <guid isPermaLink="false">https://yrwq.github.io/projects/bmf</guid>
+            <category><![CDATA[project]]></category>
+            <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/bmf" target="_blank">source</a>
+<p>reads <code>places.sqlite</code> directly, gives you a search box. type a few chars, press enter, opens in firefox.</p>
+<pre><code>bmf                   # opens the TUI
+bmf --db &lt;path&gt;       # custom places.sqlite path
+</code></pre>
+<table><thead><tr><th>key</th><th>action</th></tr></thead><tbody><tr><td><code>/</code></td><td>search</td></tr><tr><td><code>Enter</code></td><td>open in firefox</td></tr><tr><td><code>r</code></td><td>reload bookmarks</td></tr><tr><td><code>j</code>/<code>k</code></td><td>navigate</td></tr><tr><td><code>q</code>/<code>Esc</code></td><td>quit</td></tr></tbody></table>
+<p>rusqlite + a tui framework. one binary.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[lush]]></title>
+            <description><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/lush" target="_blank">source</a>
+<a href="https://yrwq.github.io/lush" target="_blank">docs</a>
+<p>wayland widget framework. write bars, panels, and overlays in lua. daemon is rust, rendering is gtk4 layer-shell.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="lua" data-theme="github-light github-dark"><code data-language="lua" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> lush </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;lush&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ui </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> lush.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">ui</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">lush.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">data</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">use</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;cpu&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, { interval </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> })</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">lush.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">data</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">use</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;battery&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">windows</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">window</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    name </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;top_bar&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    position </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;top&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    exclusive </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    root </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">hbox</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      spacing </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      children </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ bind </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;data.cpu.percent&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, format </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;CPU: {value}%&quot; </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}),</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">clock</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ format </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;%H:%M:%S&quot; </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}),</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ bind </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;data.battery.percent&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, format </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;BAT: {value}%&quot; </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}),</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    })</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span></code></pre></figure>
+<p>hot-reloads lua config on save. comes with data providers for cpu, memory, network, disk, battery. dbus notification daemon with lua styling. css hot reload.</p>
+<p>early phase, expect breaking changes. works for basic bars and panels.</p>]]></description>
+            <link>https://yrwq.github.io/projects/lush</link>
+            <guid isPermaLink="false">https://yrwq.github.io/projects/lush</guid>
+            <category><![CDATA[project]]></category>
+            <pubDate>Sat, 01 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/lush" target="_blank">source</a>
+<a href="https://yrwq.github.io/lush" target="_blank">docs</a>
+<p>wayland widget framework. write bars, panels, and overlays in lua. daemon is rust, rendering is gtk4 layer-shell.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="lua" data-theme="github-light github-dark"><code data-language="lua" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> lush </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;lush&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ui </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> lush.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">ui</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">lush.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">data</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">use</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;cpu&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, { interval </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> })</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">lush.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">data</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">use</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;battery&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">windows</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">window</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    name </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;top_bar&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    position </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;top&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    exclusive </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    root </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">hbox</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      spacing </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      children </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ bind </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;data.cpu.percent&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, format </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;CPU: {value}%&quot; </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}),</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">clock</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ format </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;%H:%M:%S&quot; </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}),</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        ui.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ bind </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;data.battery.percent&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, format </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;BAT: {value}%&quot; </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}),</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    })</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span></code></pre></figure>
+<p>hot-reloads lua config on save. comes with data providers for cpu, memory, network, disk, battery. dbus notification daemon with lua styling. css hot reload.</p>
+<p>early phase, expect breaking changes. works for basic bars and panels.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[fr]]></title>
+            <description><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/fr" target="_blank">source</a>
+<p>walks a directory tree, prints git repos.</p>
+<pre><code>fr &lt;opts&gt; [dir]
+  -d &lt;depth&gt;  max depth (default: unlimited)
+  -w &lt;width&gt;  name width (default: 10)
+  -c          clean mode — full paths only
+</code></pre>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">nvim</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> $(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">fr</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -c</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fzf</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">fr</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -c</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> xargs</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -I</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> {}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> git</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -C</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> {}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> status</span></span></code></pre></figure>
+<p>single c file, libgit2, makefile to build.</p>]]></description>
+            <link>https://yrwq.github.io/projects/fr</link>
+            <guid isPermaLink="false">https://yrwq.github.io/projects/fr</guid>
+            <category><![CDATA[project]]></category>
+            <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/fr" target="_blank">source</a>
+<p>walks a directory tree, prints git repos.</p>
+<pre><code>fr &lt;opts&gt; [dir]
+  -d &lt;depth&gt;  max depth (default: unlimited)
+  -w &lt;width&gt;  name width (default: 10)
+  -c          clean mode — full paths only
+</code></pre>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">nvim</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> $(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">fr</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -c</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fzf</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">fr</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -c</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> xargs</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -I</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> {}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> git</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -C</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> {}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> status</span></span></code></pre></figure>
+<p>single c file, libgit2, makefile to build.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[termstart]]></title>
+            <description><![CDATA[<p><strong>type:</strong> project</p>
+<link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart.png"/><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
+<a href="https://yrwq.github.io/termstart" target="_blank">app</a>
+<img class="mt-8" width="460" height="300" src="https://yrwq.github.io/projects/termstart.png"/>
+<p>replaces your new tab page with a shell-like interface. stores bookmarks in localStorage. you <code>cd</code> around, <code>touch</code> a bookmark file with a URL, <code>open</code> it.</p>
+<p>no sync, no accounts. your bookmarks live in your browser&#x27;s localStorage. if you clear site data they are gone.</p>]]></description>
+            <link>https://yrwq.github.io/projects/termstart</link>
+            <guid isPermaLink="false">https://yrwq.github.io/projects/termstart</guid>
+            <category><![CDATA[project]]></category>
+            <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
+<link rel="preload" as="image" href="https://yrwq.github.io/projects/termstart.png"/><a href="https://github.com/yrwq/termstart" target="_blank">source</a>
+<a href="https://yrwq.github.io/termstart" target="_blank">app</a>
+<img class="mt-8" width="460" height="300" src="https://yrwq.github.io/projects/termstart.png"/>
+<p>replaces your new tab page with a shell-like interface. stores bookmarks in localStorage. you <code>cd</code> around, <code>touch</code> a bookmark file with a URL, <code>open</code> it.</p>
+<p>no sync, no accounts. your bookmarks live in your browser&#x27;s localStorage. if you clear site data they are gone.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[yafetch]]></title>
+            <description><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/yafetch" target="_blank">source</a>
+<p>unlike other fetch tools that force you into a config format, yafetch just gives you raw lua. your config file is a real script. use variables, loops, conditionals, math. it runs, prints output, exits. fast because it&#x27;s rust, flexible because it&#x27;s lua.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">yafetch</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">            # uses ~/.config/yafetch/init.lua</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">yafetch</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> fetch.lua</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  # custom config path</span></span></code></pre></figure>
+<p>example output (from the default config):</p>
+<pre><code>yrwq@myhost
+distro    Arch Linux
+host      ThinkPad X1 Carbon Gen 10
+uptime    2h 34m
+kernel    6.8.7-arch1-1
+cpu       Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+disk      42gb / 256gb
+memory    3.2gb / 16gb
+</code></pre>
+<p>the exact output depends on whatever lua you write. colors, layout, spacing, what info to show, all controlled from your script.</p>
+<p>install:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">git</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> clone</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> https://github.com/yrwq/yafetch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &amp;&amp; </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">cd</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> yafetch</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">cargo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> build</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --release</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">sudo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> cp</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> target/release/yafetch</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /usr/bin</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mkdir</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -p</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ~/.config/yafetch</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">cp</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> examples/sample.lua</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ~/.config/yafetch/init.lua</span></span></code></pre></figure>
+<h2 id="lua-api"><a aria-hidden="true" tabindex="-1" href="#lua-api"><span class="icon icon-link"></span></a>lua api</h2>
+<p>every function lives under the global <code>yafetch</code> table:</p>
+<table><thead><tr><th>function</th><th>returns</th><th>source</th></tr></thead><tbody><tr><td><code>yafetch.os()</code></td><td>OS name</td><td><code>sysinfo</code></td></tr><tr><td><code>yafetch.kernel()</code></td><td>kernel release</td><td><code>systemstat</code></td></tr><tr><td><code>yafetch.host()</code></td><td>device model</td><td><code>machine-info</code></td></tr><tr><td><code>yafetch.hostname()</code></td><td>system hostname</td><td><code>gethostname</code></td></tr><tr><td><code>yafetch.user()</code></td><td>current user</td><td><code>$USER</code></td></tr><tr><td><code>yafetch.uptime()</code></td><td>uptime string</td><td><code>systemstat</code></td></tr><tr><td><code>yafetch.cpu()</code></td><td>cpu brand</td><td><code>sysinfo</code></td></tr><tr><td><code>yafetch.mem_used()</code></td><td>used ram (gb)</td><td><code>sysinfo</code></td></tr><tr><td><code>yafetch.mem_total()</code></td><td>total ram (gb)</td><td><code>sysinfo</code></td></tr><tr><td><code>yafetch.disk_total(path)</code></td><td>total space (gb)</td><td><code>fs2</code></td></tr><tr><td><code>yafetch.disk_free(path)</code></td><td>free space (gb)</td><td><code>fs2</code></td></tr></tbody></table>
+<h2 id="real-config"><a aria-hidden="true" tabindex="-1" href="#real-config"><span class="icon icon-link"></span></a>real config</h2>
+<p>this is the default <code>sample.lua</code> from the repo:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="lua" data-theme="github-light github-dark"><code data-language="lua" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> red </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[31m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> grn </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[32m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[33m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> blu </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[34m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> mag </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[35m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> wht </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[37m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[1m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[0m&quot;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> header </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> mag </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">user</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;@&quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> mag </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">hostname</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> used_ssd </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">disk_total</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;/&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">disk_free</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;/&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(header)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;distro    &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">os</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;host      &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">host</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;uptime    &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">uptime</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;kernel    &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">kernel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;cpu       &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">cpu</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;disk      &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> used_ssd </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;gb  / &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">disk_total</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;/&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;gb&quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;memory    &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">mem_used</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;gb / &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">mem_total</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;gb&quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span></code></pre></figure>]]></description>
+            <link>https://yrwq.github.io/projects/yafetch</link>
+            <guid isPermaLink="false">https://yrwq.github.io/projects/yafetch</guid>
+            <category><![CDATA[project]]></category>
+            <pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>type:</strong> project</p>
+<a href="https://github.com/yrwq/yafetch" target="_blank">source</a>
+<p>unlike other fetch tools that force you into a config format, yafetch just gives you raw lua. your config file is a real script. use variables, loops, conditionals, math. it runs, prints output, exits. fast because it&#x27;s rust, flexible because it&#x27;s lua.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">yafetch</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">            # uses ~/.config/yafetch/init.lua</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">yafetch</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> fetch.lua</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  # custom config path</span></span></code></pre></figure>
+<p>example output (from the default config):</p>
+<pre><code>yrwq@myhost
+distro    Arch Linux
+host      ThinkPad X1 Carbon Gen 10
+uptime    2h 34m
+kernel    6.8.7-arch1-1
+cpu       Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+disk      42gb / 256gb
+memory    3.2gb / 16gb
+</code></pre>
+<p>the exact output depends on whatever lua you write. colors, layout, spacing, what info to show, all controlled from your script.</p>
+<p>install:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">git</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> clone</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> https://github.com/yrwq/yafetch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &amp;&amp; </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">cd</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> yafetch</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">cargo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> build</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --release</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">sudo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> cp</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> target/release/yafetch</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /usr/bin</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mkdir</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -p</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ~/.config/yafetch</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">cp</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> examples/sample.lua</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ~/.config/yafetch/init.lua</span></span></code></pre></figure>
+<h2 id="lua-api"><a aria-hidden="true" tabindex="-1" href="#lua-api"><span class="icon icon-link"></span></a>lua api</h2>
+<p>every function lives under the global <code>yafetch</code> table:</p>
+<table><thead><tr><th>function</th><th>returns</th><th>source</th></tr></thead><tbody><tr><td><code>yafetch.os()</code></td><td>OS name</td><td><code>sysinfo</code></td></tr><tr><td><code>yafetch.kernel()</code></td><td>kernel release</td><td><code>systemstat</code></td></tr><tr><td><code>yafetch.host()</code></td><td>device model</td><td><code>machine-info</code></td></tr><tr><td><code>yafetch.hostname()</code></td><td>system hostname</td><td><code>gethostname</code></td></tr><tr><td><code>yafetch.user()</code></td><td>current user</td><td><code>$USER</code></td></tr><tr><td><code>yafetch.uptime()</code></td><td>uptime string</td><td><code>systemstat</code></td></tr><tr><td><code>yafetch.cpu()</code></td><td>cpu brand</td><td><code>sysinfo</code></td></tr><tr><td><code>yafetch.mem_used()</code></td><td>used ram (gb)</td><td><code>sysinfo</code></td></tr><tr><td><code>yafetch.mem_total()</code></td><td>total ram (gb)</td><td><code>sysinfo</code></td></tr><tr><td><code>yafetch.disk_total(path)</code></td><td>total space (gb)</td><td><code>fs2</code></td></tr><tr><td><code>yafetch.disk_free(path)</code></td><td>free space (gb)</td><td><code>fs2</code></td></tr></tbody></table>
+<h2 id="real-config"><a aria-hidden="true" tabindex="-1" href="#real-config"><span class="icon icon-link"></span></a>real config</h2>
+<p>this is the default <code>sample.lua</code> from the repo:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="lua" data-theme="github-light github-dark"><code data-language="lua" data-theme="github-light github-dark" style="display:grid"><span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> red </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[31m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> grn </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[32m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[33m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> blu </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[34m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> mag </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[35m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> wht </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[37m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[1m&quot;</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\27</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[0m&quot;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> header </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> mag </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">user</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;@&quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> mag </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">hostname</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">local</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> used_ssd </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">disk_total</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;/&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">disk_free</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;/&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(header)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;distro    &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">os</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;host      &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">host</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;uptime    &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">uptime</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;kernel    &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">kernel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;cpu       &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">cpu</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;disk      &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> used_ssd </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;gb  / &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">disk_total</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">&quot;/&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;gb&quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(yel </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;memory    &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> bold </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">mem_used</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;gb / &quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> yafetch.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">mem_total</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &quot;gb&quot; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">..</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> res)</span></span></code></pre></figure>]]></content:encoded>
         </item>
     </channel>
 </rss>
